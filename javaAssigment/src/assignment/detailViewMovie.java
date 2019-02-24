@@ -85,7 +85,7 @@ public class detailViewMovie extends JFrame {
 		JLabel label_1 = new JLabel("");
 		label_1.setOpaque(true);
 		label_1.setBackground(new Color(204, 0, 0));
-		label_1.setBounds(16, 56, 300, 400);
+		label_1.setBounds(24, 66, 250, 350);
 		contentPane.add(label_1);
 		label_1.setIcon(new ImageIcon(m.getImage()));
 		
@@ -227,7 +227,7 @@ public class detailViewMovie extends JFrame {
 		JTextArea textArea = new JTextArea();
 		textArea.setText(m.getSummary());
 		textArea.setEditable(false);
-		textArea.setBounds(16, 478, 1067, 129);
+		textArea.setBounds(16, 449, 1067, 136);
 		contentPane.add(textArea);
 		
 	}

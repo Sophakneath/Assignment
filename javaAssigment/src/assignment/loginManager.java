@@ -66,10 +66,11 @@ public class loginManager extends JFrame implements ActionListener{
 		contentPane.add(label);
 		
 		JLabel lblPhnomPenhCinema = new JLabel("Phnom Penh Cinema");
+		lblPhnomPenhCinema.setHorizontalAlignment(SwingConstants.CENTER);
 		contentPane.add(lblPhnomPenhCinema);
 		lblPhnomPenhCinema.setBounds(67, 157, 175, 16);
 		//panel.add(lblPhnomPenhCinema);
-		lblPhnomPenhCinema.setFont(new Font("AKbalthom KhmerLight", Font.BOLD, 19));
+		lblPhnomPenhCinema.setFont(new Font("AKbalthom KhmerLight", Font.BOLD, 17));
 		
 		JPanel panel = new JPanel();
 		panel.setBackground(Color.WHITE);
@@ -153,10 +154,11 @@ public class loginManager extends JFrame implements ActionListener{
 		});
 		
 		JLabel lblWelcomeTo = new JLabel("WELCOME TO");
+		lblWelcomeTo.setHorizontalAlignment(SwingConstants.CENTER);
 		contentPane.add(lblWelcomeTo);
 		lblWelcomeTo.setBounds(42, 109, 226, 47);
 		//panel.add(lblWelcomeTo);
-		lblWelcomeTo.setFont(new Font("AAAAAAAAAAAAAAAAAAAAAAAA", Font.BOLD, 36));
+		lblWelcomeTo.setFont(new Font("AAAAAAAAAAAAAAAAAAAAAAAA", Font.BOLD, 33));
 		
 		cover = new JLabel("");
 		cover.setVerticalAlignment(SwingConstants.TOP);

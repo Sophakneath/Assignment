@@ -228,7 +228,7 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 	public static detailViewMembership frame3;
 	public static detailViewMemsale frame5;
 	
-	/*public static void main(String[] args) {
+	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
@@ -239,7 +239,7 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 				}
 			}
 		});
-	}*/
+	}
 	public managerFunction() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		//setBounds(100, 100, 450, 300);
@@ -303,12 +303,12 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 		title.setHorizontalAlignment(SwingConstants.CENTER);
 		title.setForeground(Color.WHITE);
 		title.setFont(new Font("Comic Sans MS", Font.BOLD, 28));
-		title.setBounds(0, 6, 1684, 36);
+		title.setBounds(0, 6, 1365, 36);
 		panel_3.add(title);
 		
 		panel = new JPanel();
 		panel.setBackground(new Color(204, 0, 0));
-		panel.setBounds(100, 930, 1480, 136);
+		panel.setBounds(50, 665, 1266, 103);
 		contentPane.add(panel);
 		panel.setLayout(new GridLayout(1,6,10,10));
 		
@@ -421,8 +421,8 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 		panel.add(conSale1);
 	
 		submenu = new JPanel();
-		subtitle = new JLabel();
-		//UISubmenu("", "", "", "", "", "", 1);
+		subtitle = new JLabel(); 
+		UISubmenu("", "", "", "", "", "", 1); 
 		
 		addMovieUI();
 		panelAdd.setVisible(false);
@@ -535,7 +535,7 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 		
 		setUndecorated(true);
 		Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
-		setSize(screenSize.width, screenSize.height-10);
+		setSize(1366,768);
 		//setLocationRelativeTo(null);
 	}
 	
@@ -544,7 +544,7 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 		submenu = new JPanel();
 		submenu.setBorder(UIManager.getBorder("Menu.border"));
 		submenu.setBackground(Color.WHITE);
-		submenu.setBounds(0, 52, 298, 1014);
+		submenu.setBounds(0, 52, 255, 716);
 		contentPane.add(submenu);
 		submenu.setLayout(null);
 		
@@ -565,7 +565,7 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 		panel_2.setLayout(null);
 		//panel_2.setBorder(new LineBorder(new Color(0, 0, 0)));
 		
-		madd.setBounds(17, 0, 298, 87);
+		madd.setBounds(10, 0, 298, 87);
 		panel_2.add(madd);
 		madd.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
 		madd.setIcon(new ImageIcon("images/pluss.png"));
@@ -581,7 +581,7 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 		mshow = new JLabel(show);
 		mshow.setIcon(new ImageIcon(showImage));
 		mshow.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		mshow.setBounds(17, 0, 298, 87);
+		mshow.setBounds(10, 0, 298, 87);
 		panel_4.add(mshow);
 		
 		JPanel panel_5 = new JPanel();
@@ -593,7 +593,7 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 		msearch = new JLabel(search);
 		msearch.setIcon(new ImageIcon("images/magnifying-glass.png"));
 		msearch.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		msearch.setBounds(17, 0, 298, 87);
+		msearch.setBounds(10, 0, 298, 87);
 		panel_5.add(msearch);
 		
 		if(choose == 1) {
@@ -605,7 +605,7 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 			
 			mupdate.setIcon(new ImageIcon("images/refresh.png"));
 			mupdate.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-			mupdate.setBounds(17, 0, 298, 87);
+			mupdate.setBounds(10, 0, 298, 87);
 			panel_6.add(mupdate);
 		}
 		
@@ -618,7 +618,7 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 		mdelete = new JLabel(delete);
 		mdelete.setIcon(new ImageIcon("images/delete.png"));
 		mdelete.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		mdelete.setBounds(17, 0, 298, 87);
+		mdelete.setBounds(10, 0, 298, 87);
 		panel_7.add(mdelete);
 		
 		JPanel panel_2 = new JPanel();
@@ -631,24 +631,24 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 		JLabel lblNewLabel = new JLabel("");
 		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNewLabel.setIcon(new ImageIcon("/Users/phakneath/Downloads/film.png"));
-		lblNewLabel.setBounds(-2, 0, 309, 129);
+		lblNewLabel.setBounds(6, 0, 258, 129);
 		panel_2.add(lblNewLabel);
 		
 		JLabel lblPhnomPenhCinema = new JLabel("Phnom Penh Cinema");
 		lblPhnomPenhCinema.setForeground(Color.WHITE);
 		lblPhnomPenhCinema.setHorizontalAlignment(SwingConstants.CENTER);
 		lblPhnomPenhCinema.setFont(new Font("Comic Sans MS", Font.PLAIN, 21));
-		lblPhnomPenhCinema.setBounds(0, 70, 307, 111);
+		lblPhnomPenhCinema.setBounds(8, 70, 258, 111);
 		panel_2.add(lblPhnomPenhCinema);
 		
 		JLabel lblWelcomeManager = new JLabel("Welcome Manager");
 		lblWelcomeManager.setForeground(Color.WHITE);
 		lblWelcomeManager.setHorizontalAlignment(SwingConstants.CENTER);
-		lblWelcomeManager.setBounds(8, 141, 299, 37);
+		lblWelcomeManager.setBounds(8, 141, 256, 37);
 		lblWelcomeManager.setFont(new Font("Comic Sans MS", Font.PLAIN, 19));
 		panel_2.add(lblWelcomeManager);
 		
-		subtitle.setBounds(346, 82, 467, 36);
+		subtitle.setBounds(315, 60, 467, 42);
 		subtitle.setFont(new Font("Comic Sans MS", Font.PLAIN, 26));
 		contentPane.add(subtitle);
 		
@@ -720,7 +720,7 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 	public void viewMovieUI()
 	{
 		spViewMovie = new JScrollPane();
-		spViewMovie.setBounds(298, 141, 1382, 899);
+		spViewMovie.setBounds(257, 114, 1110, 654);
 		spViewMovie.getViewport().setBackground(new Color(238, 238, 238));
 		contentPane.add(spViewMovie);
 		spViewMovie.setBorder(BorderFactory.createEmptyBorder());
@@ -731,19 +731,19 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 	{
 		panelAdd = new JPanel();
 		panelAdd.setBorder(new LineBorder(new Color(204, 0, 0), 3));
-		panelAdd.setBounds(338, 144, 1304, 792);
+		panelAdd.setBounds(280, 110, 1065, 582);
 		contentPane.add(panelAdd);
 		panelAdd.setLayout(null);
 		
 		JLabel lblNewLabel_2 = new JLabel("Movie Information");
 		lblNewLabel_2.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_2.setBounds(6, 8, 1322, 45);
+		lblNewLabel_2.setBounds(6, 8, 1053, 45);
 		lblNewLabel_2.setFont(new Font("Comic Sans MS", Font.PLAIN, 21));
 		panelAdd.add(lblNewLabel_2);
 		mAIcon = new JLabel("");
 		mAIcon.setOpaque(true);
 		mAIcon.setBackground(new Color(204, 0, 0));
-		mAIcon.setBounds(42, 65, 300, 400);
+		mAIcon.setBounds(20, 65, 250, 350);
 		panelAdd.add(mAIcon);
 		mAIcon.addMouseListener(new MouseListener() {
 			
@@ -779,41 +779,41 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 			});
 		
 		JLabel lblNewLabel_3 = new JLabel("Movie Name");
-		lblNewLabel_3.setBounds(384, 103, 100, 23);
+		lblNewLabel_3.setBounds(293, 79, 100, 23);
 		lblNewLabel_3.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
 		panelAdd.add(lblNewLabel_3);
 		
 		mName = new JTextField();
-		mName.setBounds(544, 98, 250, 36);
+		mName.setBounds(427, 79, 218, 36);
 		panelAdd.add(mName);
 		mName.setColumns(10);
 		
 		JLabel lblLanguage = new JLabel("Language");
 		lblLanguage.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblLanguage.setBounds(384, 151, 100, 23);
+		lblLanguage.setBounds(293, 127, 100, 23);
 		panelAdd.add(lblLanguage);
 		mLanguage = new JTextField();
 		mLanguage.setColumns(10);
-		mLanguage.setBounds(544, 146, 250, 36);
+		mLanguage.setBounds(427, 127, 218, 36);
 		panelAdd.add(mLanguage);
 		
 		JLabel lblSubtitle = new JLabel("Subtitle");
 		lblSubtitle.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblSubtitle.setBounds(384, 199, 100, 23);
+		lblSubtitle.setBounds(293, 175, 100, 23);
 		panelAdd.add(lblSubtitle);
 		
 		mSubtitle = new JTextField();
 		mSubtitle.setColumns(10);
-		mSubtitle.setBounds(544, 194, 250, 36);
+		mSubtitle.setBounds(427, 175, 218, 36);
 		panelAdd.add(mSubtitle);
 		
 		JLabel lblFormats = new JLabel("Formats");
 		lblFormats.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblFormats.setBounds(384, 246, 100, 23);
+		lblFormats.setBounds(293, 222, 100, 23);
 		panelAdd.add(lblFormats);
 		
 		cboFormats = new JComboBox();
-		cboFormats.setBounds(544, 242, 250, 36);
+		cboFormats.setBounds(427, 223, 218, 36);
 		panelAdd.add(cboFormats);
 		
 		cboFormats.addItem("2D");
@@ -821,12 +821,12 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 		
 		JLabel lblRunningTime = new JLabel("Running Time");
 		lblRunningTime.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblRunningTime.setBounds(384, 295, 108, 23);
+		lblRunningTime.setBounds(293, 271, 108, 23);
 		panelAdd.add(lblRunningTime);
 		
 		mRun = new JTextField();
 		mRun.setColumns(10);
-		mRun.setBounds(544, 290, 250, 36);
+		mRun.setBounds(427, 271, 218, 36);
 		panelAdd.add(mRun);
 		
 		mRun.addKeyListener(new KeyListener() {
@@ -845,61 +845,61 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 		});
 		JLabel lblGenre = new JLabel("Genre");
 		lblGenre.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblGenre.setBounds(384, 343, 108, 23);
+		lblGenre.setBounds(293, 319, 108, 23);
 		panelAdd.add(lblGenre);
 		
 		mGenre = new JTextField();
 		mGenre.setColumns(10);
-		mGenre.setBounds(544, 338, 250, 36);
+		mGenre.setBounds(427, 319, 218, 36);
 		panelAdd.add(mGenre);
 		
 		JLabel lblOpeningDate = new JLabel("Opening Date");
 		lblOpeningDate.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblOpeningDate.setBounds(384, 396, 108, 23);
+		lblOpeningDate.setBounds(293, 372, 108, 23);
 		panelAdd.add(lblOpeningDate);
 		
 		openDateChooser = new JDateChooser();
-		openDateChooser.setBounds(544, 386, 250, 36);
+		openDateChooser.setBounds(427, 367, 218, 36);
 		panelAdd.add(openDateChooser);
 		
 		JLabel lblCast = new JLabel("Cast");
 		lblCast.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblCast.setBounds(847, 98, 108, 23);
+		lblCast.setBounds(688, 84, 108, 23);
 		panelAdd.add(lblCast);
 		
 		mCast = new JTextField();
 		mCast.setColumns(10);
-		mCast.setBounds(1007, 93, 250, 36);
+		mCast.setBounds(829, 79, 218, 36);
 		panelAdd.add(mCast);
 		
 		JLabel lblDirector = new JLabel("Director");
 		lblDirector.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblDirector.setBounds(847, 144, 108, 23);
+		lblDirector.setBounds(688, 130, 108, 23);
 		panelAdd.add(lblDirector);
 		
 		mDirector = new JTextField();
 		mDirector.setColumns(10);
-		mDirector.setBounds(1007, 139, 250, 36);
+		mDirector.setBounds(829, 125, 218, 36);
 		panelAdd.add(mDirector);
 		
 		JLabel lblImportedFrom = new JLabel("Imported From");
 		lblImportedFrom.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblImportedFrom.setBounds(847, 192, 108, 23);
+		lblImportedFrom.setBounds(688, 178, 108, 23);
 		panelAdd.add(lblImportedFrom);
 		
 		mFrom = new JTextField();
 		mFrom.setColumns(10);
-		mFrom.setBounds(1007, 187, 250, 36);
+		mFrom.setBounds(829, 173, 218, 36);
 		panelAdd.add(mFrom);
 		
 		JLabel lblImportedPrice = new JLabel("Imported Price");
 		lblImportedPrice.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblImportedPrice.setBounds(847, 239, 108, 23);
+		lblImportedPrice.setBounds(688, 225, 108, 23);
 		panelAdd.add(lblImportedPrice);
 		
 		mPirce = new JTextField();
 		mPirce.setColumns(10);
-		mPirce.setBounds(1007, 234, 250, 36);
+		mPirce.setBounds(829, 220, 218, 36);
 		panelAdd.add(mPirce);
 		
 		mPirce.addKeyListener(new KeyListener() {
@@ -918,24 +918,24 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 		});
 		JLabel lblImportedDate = new JLabel("Imported Date");
 		lblImportedDate.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblImportedDate.setBounds(847, 290, 108, 23);
+		lblImportedDate.setBounds(688, 276, 108, 23);
 		panelAdd.add(lblImportedDate);
 		
 		importDateChooser = new JDateChooser();
-		importDateChooser.setBounds(1007, 282, 250, 36);
+		importDateChooser.setBounds(829, 268, 218, 36);
 		panelAdd.add(importDateChooser);
 		
 		JLabel lblMovieSummary = new JLabel("Movie Summary");
 		lblMovieSummary.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblMovieSummary.setBounds(54, 613, 148, 23);
+		lblMovieSummary.setBounds(53, 475, 148, 23);
 		panelAdd.add(lblMovieSummary);
 		
 		summary = new JTextArea();
-		summary.setBounds(225, 514, 1032, 238);
+		summary.setBounds(227, 437, 799, 122);
 		panelAdd.add(summary);
 		
 		panelButtonAdd = new JPanel();
-		panelButtonAdd.setBounds(700, 948, 610, 65);
+		panelButtonAdd.setBounds(525, 703, 610, 65);
 		contentPane.add(panelButtonAdd);
 		panelButtonAdd.setLayout(null);
 		
@@ -967,168 +967,168 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 	{
 		panelSearch = new JPanel();
 		panelSearch.setBorder(new LineBorder(new Color(204, 0, 0), 3));
-		panelSearch.setBounds(338, 144, 1304, 792);
+		panelSearch.setBounds(280, 110, 1065, 582);
 		contentPane.add(panelSearch);
 		panelSearch.setLayout(null);
 		
 		JLabel lblNewLabel_2 = new JLabel("Search Movie Information");
 		lblNewLabel_2.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_2.setBounds(6, 8, 1322, 45);
+		lblNewLabel_2.setBounds(6, 8, 1053, 45);
 		lblNewLabel_2.setFont(new Font("Comic Sans MS", Font.PLAIN, 21));
 		panelSearch.add(lblNewLabel_2);
 		
 		mSIcon = new JLabel("");
 		mSIcon.setOpaque(true);
 		mSIcon.setBackground(new Color(204, 0, 0));
-		mSIcon.setBounds(42, 65, 300, 400);
+		mSIcon.setBounds(20, 65, 250, 350);
 		panelSearch.add(mSIcon);
 		
 		JLabel lblNewLabel_3 = new JLabel("Movie Name");
-		lblNewLabel_3.setBounds(383, 146, 100, 23);
+		lblNewLabel_3.setBounds(288, 115, 100, 23);
 		lblNewLabel_3.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
 		panelSearch.add(lblNewLabel_3);
 		
 		lblmovieName = new JLabel(":");
-		lblmovieName.setBounds(543, 141, 250, 36);
+		lblmovieName.setBounds(432, 110, 218, 36);
 		panelSearch.add(lblmovieName);
 		
 		JLabel lblLanguage = new JLabel("Language");
 		lblLanguage.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblLanguage.setBounds(383, 194, 100, 23);
+		lblLanguage.setBounds(288, 163, 100, 23);
 		panelSearch.add(lblLanguage);
 		
 		lbllanguage = new JLabel(":");
-		lbllanguage.setBounds(543, 189, 250, 36);
+		lbllanguage.setBounds(432, 158, 218, 36);
 		panelSearch.add(lbllanguage);
 		
 		JLabel lblSubtitle = new JLabel("Subtitle");
 		lblSubtitle.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblSubtitle.setBounds(383, 242, 100, 23);
+		lblSubtitle.setBounds(288, 211, 100, 23);
 		panelSearch.add(lblSubtitle);
 		
 		lblsubtitle = new JLabel(":");
-		lblsubtitle.setBounds(543, 237, 250, 36);
+		lblsubtitle.setBounds(432, 206, 218, 36);
 		panelSearch.add(lblsubtitle);
 		
 		JLabel lblFormats = new JLabel("Formats");
 		lblFormats.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblFormats.setBounds(383, 289, 100, 23);
+		lblFormats.setBounds(288, 258, 100, 23);
 		panelSearch.add(lblFormats);
 		
 		JLabel lblRunningTime = new JLabel("Running Time");
 		lblRunningTime.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblRunningTime.setBounds(383, 338, 108, 23);
+		lblRunningTime.setBounds(288, 307, 108, 23);
 		panelSearch.add(lblRunningTime);
 		
 		lblrunningtime = new JLabel(":");
-		lblrunningtime.setBounds(543, 333, 250, 36);
+		lblrunningtime.setBounds(432, 302, 218, 36);
 		panelSearch.add(lblrunningtime);
 		
 		JLabel lblGenre = new JLabel("Genre");
 		lblGenre.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblGenre.setBounds(383, 386, 108, 23);
+		lblGenre.setBounds(288, 355, 108, 23);
 		panelSearch.add(lblGenre);
 		
 		lblgenre = new JLabel(":");
-		lblgenre.setBounds(543, 381, 250, 36);
+		lblgenre.setBounds(432, 350, 218, 36);
 		panelSearch.add(lblgenre);
 		
 		JLabel lblOpeningDate = new JLabel("Opening Date");
 		lblOpeningDate.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblOpeningDate.setBounds(383, 439, 108, 23);
+		lblOpeningDate.setBounds(288, 399, 108, 23);
 		panelSearch.add(lblOpeningDate);
 		
 		JLabel lblCast = new JLabel("Cast");
 		lblCast.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblCast.setBounds(845, 199, 108, 23);
+		lblCast.setBounds(681, 168, 108, 23);
 		panelSearch.add(lblCast);
 		
 		lblcast = new JLabel(":");
-		lblcast.setBounds(1005, 194, 250, 36);
+		lblcast.setBounds(823, 163, 218, 36);
 		panelSearch.add(lblcast);
 		
 		JLabel lblDirector = new JLabel("Director");
 		lblDirector.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblDirector.setBounds(845, 245, 108, 23);
+		lblDirector.setBounds(681, 214, 108, 23);
 		panelSearch.add(lblDirector);
 		
 		lbldirector = new JLabel(":");
-		lbldirector.setBounds(1005, 240, 250, 36);
+		lbldirector.setBounds(823, 209, 218, 36);
 		panelSearch.add(lbldirector);
 		
 		JLabel lblImportedFrom = new JLabel("Imported From");
 		lblImportedFrom.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblImportedFrom.setBounds(845, 293, 108, 23);
+		lblImportedFrom.setBounds(681, 262, 108, 23);
 		panelSearch.add(lblImportedFrom);
 		
 		lblfrom = new JLabel(":");
-		lblfrom.setBounds(1005, 288, 250, 36);
+		lblfrom.setBounds(823, 257, 218, 36);
 		panelSearch.add(lblfrom);
 		
 		JLabel lblImportedPrice = new JLabel("Imported Price");
 		lblImportedPrice.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblImportedPrice.setBounds(845, 340, 108, 23);
+		lblImportedPrice.setBounds(681, 309, 108, 23);
 		panelSearch.add(lblImportedPrice);
 		
 		lblprice = new JLabel(":");
-		lblprice.setBounds(1005, 335, 250, 36);
+		lblprice.setBounds(823, 304, 218, 36);
 		panelSearch.add(lblprice);
 		
 		JLabel lblImportedDate = new JLabel("Imported Date");
 		lblImportedDate.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblImportedDate.setBounds(845, 391, 108, 23);
+		lblImportedDate.setBounds(681, 360, 108, 23);
 		panelSearch.add(lblImportedDate);
 		
 		JLabel lblMovieSummary = new JLabel("Movie Summary");
 		lblMovieSummary.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblMovieSummary.setBounds(54, 613, 148, 23);
+		lblMovieSummary.setBounds(53, 475, 148, 23);
 		panelSearch.add(lblMovieSummary);
 		
 		mSSummary = new JTextArea();
 		mSSummary.setText("aaa");
 		mSSummary.setEditable(false);
-		mSSummary.setBounds(225, 514, 1032, 238);
+		mSSummary.setBounds(227, 437, 779, 122);
 		panelSearch.add(mSSummary);
 		
 		lblformats = new JLabel(":");
-		lblformats.setBounds(543, 285, 250, 36);
+		lblformats.setBounds(432, 254, 218, 36);
 		panelSearch.add(lblformats);
 		
 		lblopendate = new JLabel(":");
-		lblopendate.setBounds(543, 429, 250, 36);
+		lblopendate.setBounds(432, 389, 218, 36);
 		panelSearch.add(lblopendate);
 		
 		lbldate = new JLabel(":");
-		lbldate.setBounds(1005, 383, 250, 36);
+		lbldate.setBounds(823, 352, 218, 36);
 		panelSearch.add(lbldate);
 		
 		lblSearch = new JLabel("Search by Name");
-		lblSearch.setBounds(373, 69, 150, 23);
+		lblSearch.setBounds(292, 67, 150, 23);
 		lblSearch.setFont(new Font("Arial Unicode MS", Font.PLAIN, 18));
 		panelSearch.add(lblSearch);
 		
 		mSSearch = new JTextField();
-		mSSearch.setBounds(543, 65, 551, 36);
+		mSSearch.setBounds(462, 63, 390, 36);
 		panelSearch.add(mSSearch);
 		mSSearch.setColumns(10);
 		
 		btnMSSearch = new JButton("Search");
-		btnMSSearch.setBounds(1120, 65, 117, 36);
+		btnMSSearch.setBounds(907, 65, 117, 36);
 		panelSearch.add(btnMSSearch);
 		
 		btnMSSearch.addActionListener(this);
 		
 		lblMovieID = new JLabel("Movie ID ");
 		lblMovieID.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblMovieID.setBounds(845, 151, 108, 23);
+		lblMovieID.setBounds(681, 120, 108, 23);
 		panelSearch.add(lblMovieID);
 		
 		lblMovieID= new JLabel(":");
-		lblMovieID.setBounds(1005, 146, 250, 36);
+		lblMovieID.setBounds(823, 115, 218, 36);
 		panelSearch.add(lblMovieID);
 		
 		panelButtonSearch = new JPanel();
-		panelButtonSearch.setBounds(700, 948, 610, 65);
+		panelButtonSearch.setBounds(528, 703, 610, 65);
 		contentPane.add(panelButtonSearch);
 		panelButtonSearch.setLayout(null);
 		
@@ -1158,20 +1158,20 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 	{
 		panelUpdate = new JPanel();
 		panelUpdate.setBorder(new LineBorder(new Color(204, 0, 0), 3));
-		panelUpdate.setBounds(338, 144, 1304, 792);
+		panelUpdate.setBounds(280, 110, 1065, 582);
 		contentPane.add(panelUpdate);
 		panelUpdate.setLayout(null);
 		
 		JLabel lblNewLabel_2 = new JLabel("Update Movie"); 
 		lblNewLabel_2.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_2.setBounds(6, 8, 1322, 45);
+		lblNewLabel_2.setBounds(6, 8, 1053, 45);
 		lblNewLabel_2.setFont(new Font("Comic Sans MS", Font.PLAIN, 21));
 		panelUpdate.add(lblNewLabel_2);
 		
 		mUIcon = new JLabel("");
 		mUIcon.setOpaque(true);
 		mUIcon.setBackground(new Color(204, 0, 0));
-		mUIcon.setBounds(42, 65, 300, 400);
+		mUIcon.setBounds(20, 65, 250, 350);
 		panelUpdate.add(mUIcon);
 		
 		mUIcon.addMouseListener(new MouseListener() {
@@ -1208,48 +1208,48 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 		});
 
 		JLabel lblNewLabel_3 = new JLabel("Movie Name");
-		lblNewLabel_3.setBounds(383, 146, 100, 23);
+		lblNewLabel_3.setBounds(288, 121, 100, 23);
 		lblNewLabel_3.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
 		panelUpdate.add(lblNewLabel_3);
 		
 		mUName = new JTextField();
-		mUName.setBounds(543, 141, 250, 36);
+		mUName.setBounds(432, 116, 218, 36);
 		panelUpdate.add(mUName);
 		mUName.setColumns(10);
 		
 		JLabel lblLanguage = new JLabel("Language");
 		lblLanguage.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblLanguage.setBounds(383, 194, 100, 23);
+		lblLanguage.setBounds(288, 169, 100, 23);
 		panelUpdate.add(lblLanguage);
 		
 		mULanguage = new JTextField();
 		mULanguage.setColumns(10);
-		mULanguage.setBounds(543, 189, 250, 36);
+		mULanguage.setBounds(432, 164, 218, 36);
 		panelUpdate.add(mULanguage);
 		
 		JLabel lblSubtitle = new JLabel("Subtitle");
 		lblSubtitle.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblSubtitle.setBounds(383, 242, 100, 23);
+		lblSubtitle.setBounds(288, 217, 100, 23);
 		panelUpdate.add(lblSubtitle);
 		
 		mUSubtitle = new JTextField();
 		mUSubtitle.setColumns(10);
-		mUSubtitle.setBounds(543, 237, 250, 36);
+		mUSubtitle.setBounds(432, 212, 218, 36);
 		panelUpdate.add(mUSubtitle);
 		
 		JLabel lblFormats = new JLabel("Formats");
 		lblFormats.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblFormats.setBounds(383, 289, 100, 23);
+		lblFormats.setBounds(288, 264, 100, 23);
 		panelUpdate.add(lblFormats);
 		
 		JLabel lblRunningTime = new JLabel("Running Time");
 		lblRunningTime.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblRunningTime.setBounds(383, 338, 108, 23);
+		lblRunningTime.setBounds(288, 313, 108, 23);
 		panelUpdate.add(lblRunningTime);
 		
 		mURun= new JTextField();
 		mURun.setColumns(10);
-		mURun.setBounds(543, 333, 250, 36);
+		mURun.setBounds(432, 308, 218, 36);
 		panelUpdate.add(mURun);
 		
 		mURun.addKeyListener(new KeyListener() {
@@ -1268,57 +1268,57 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 		});
 		JLabel lblGenre = new JLabel("Genre");
 		lblGenre.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblGenre.setBounds(383, 386, 108, 23);
+		lblGenre.setBounds(288, 361, 108, 23);
 		panelUpdate.add(lblGenre);
 		
 		mUUGenre = new JTextField();
 		mUUGenre.setColumns(10);
-		mUUGenre.setBounds(543, 381, 250, 36);
+		mUUGenre.setBounds(432, 356, 218, 36);
 		panelUpdate.add(mUUGenre);
 		
 		JLabel lblOpeningDate = new JLabel("Opening Date");
 		lblOpeningDate.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblOpeningDate.setBounds(383, 439, 108, 23);
+		lblOpeningDate.setBounds(288, 414, 108, 23);
 		panelUpdate.add(lblOpeningDate);
 		
 		JLabel lblCast = new JLabel("Cast");
 		lblCast.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblCast.setBounds(845, 199, 108, 23);
+		lblCast.setBounds(676, 174, 108, 23);
 		panelUpdate.add(lblCast);
 		
 		mUCast = new JTextField();
 		mUCast.setColumns(10);
-		mUCast.setBounds(1005, 194, 250, 36);
+		mUCast.setBounds(826, 169, 218, 36);
 		panelUpdate.add(mUCast);
 		
 		JLabel lblDirector = new JLabel("Director");
 		lblDirector.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblDirector.setBounds(845, 245, 108, 23);
+		lblDirector.setBounds(676, 220, 108, 23);
 		panelUpdate.add(lblDirector);
 		
 		mUDirector = new JTextField();
 		mUDirector.setColumns(10);
-		mUDirector.setBounds(1005, 240, 250, 36);
+		mUDirector.setBounds(826, 215, 218, 36);
 		panelUpdate.add(mUDirector);
 		
 		JLabel lblImportedFrom = new JLabel("Imported From");
 		lblImportedFrom.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblImportedFrom.setBounds(845, 293, 108, 23);
+		lblImportedFrom.setBounds(676, 268, 108, 23);
 		panelUpdate.add(lblImportedFrom);
 		
 		mUFrom = new JTextField();
 		mUFrom.setColumns(10);
-		mUFrom.setBounds(1005, 288, 250, 36);
+		mUFrom.setBounds(826, 263, 218, 36);
 		panelUpdate.add(mUFrom);
 		
 		JLabel lblImportedPrice = new JLabel("Imported Price");
 		lblImportedPrice.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblImportedPrice.setBounds(845, 340, 108, 23);
+		lblImportedPrice.setBounds(676, 315, 108, 23);
 		panelUpdate.add(lblImportedPrice);
 		
 		mUPirce = new JTextField();
 		mUPirce.setColumns(10);
-		mUPirce.setBounds(1005, 335, 250, 36);
+		mUPirce.setBounds(826, 310, 218, 36);
 		panelUpdate.add(mUPirce);
 		
 		mUPirce.addKeyListener(new KeyListener() {
@@ -1337,61 +1337,61 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 		});
 		JLabel lblImportedDate = new JLabel("Imported Date");
 		lblImportedDate.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblImportedDate.setBounds(845, 391, 108, 23);
+		lblImportedDate.setBounds(676, 366, 108, 23);
 		panelUpdate.add(lblImportedDate);
 		
 		JLabel lblMovieSummary = new JLabel("Movie Summary");
 		lblMovieSummary.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblMovieSummary.setBounds(54, 613, 148, 23);
+		lblMovieSummary.setBounds(53, 475, 148, 23);
 		panelUpdate.add(lblMovieSummary);
 		
 		mUSummary = new JTextArea();
 		mUSummary.setText("aaa");
-		mUSummary.setBounds(225, 514, 1032, 238);
+		mUSummary.setBounds(227, 450, 779, 122);
 		panelUpdate.add(mUSummary);
 		
 		cboUFormats = new JComboBox();
-		cboUFormats.setBounds(543, 285, 250, 36);
+		cboUFormats.setBounds(432, 260, 218, 36);
 		panelUpdate.add(cboUFormats);
 		
 		cboUFormats.addItem("2D");
 		cboUFormats.addItem("3D");
 		
 		uOpenDateChooser = new JDateChooser();
-		uOpenDateChooser.setBounds(543, 429, 250, 36);
+		uOpenDateChooser.setBounds(432, 404, 218, 36);
 		panelUpdate.add(uOpenDateChooser);
 		
 		uImportDateChooser = new JDateChooser();
-		uImportDateChooser.setBounds(1005, 383, 250, 36);
+		uImportDateChooser.setBounds(826, 358, 218, 36);
 		panelUpdate.add(uImportDateChooser);
 		
 		JLabel lblSearch_1 = new JLabel("Search by Name");
 		lblSearch_1.setFont(new Font("Arial Unicode MS", Font.PLAIN, 18));
-		lblSearch_1.setBounds(373, 69, 150, 23);
+		lblSearch_1.setBounds(298, 71, 150, 23);
 		panelUpdate.add(lblSearch_1);
 		
 		mUSearch = new JTextField();
-		mUSearch.setBounds(543, 65, 551, 36);
+		mUSearch.setBounds(468, 66, 397, 36);
 		panelUpdate.add(mUSearch);
 		mUSearch.setColumns(10);
 		
 		btnMUSearch = new JButton("Search");
-		btnMUSearch.setBounds(1120, 64, 117, 36);
+		btnMUSearch.setBounds(907, 65, 117, 36);
 		panelUpdate.add(btnMUSearch);
 		
 		JLabel lblMovieId_1 = new JLabel("Movie ID ");
 		lblMovieId_1.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblMovieId_1.setBounds(845, 151, 108, 23);
+		lblMovieId_1.setBounds(676, 126, 108, 23);
 		panelUpdate.add(lblMovieId_1);
 		
 		mUMovieID= new JTextField();
 		mUMovieID.setColumns(10);
 		mUMovieID.setEditable(false);;
-		mUMovieID.setBounds(1005, 146, 250, 36);
+		mUMovieID.setBounds(826, 121, 218, 36);
 		panelUpdate.add(mUMovieID);
 		
 		panelButtonUpdate = new JPanel();
-		panelButtonUpdate.setBounds(700, 948, 610, 65);
+		panelButtonUpdate.setBounds(537, 703, 610, 65);
 		contentPane.add(panelButtonUpdate);
 		panelButtonUpdate.setLayout(null);
 		
@@ -1424,162 +1424,162 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 	{
 		panelDelete = new JPanel();
 		panelDelete.setBorder(new LineBorder(new Color(204, 0, 0), 3));
-		panelDelete.setBounds(338, 144, 1304, 792);
+		panelDelete.setBounds(280, 110, 1065, 582);
 		contentPane.add(panelDelete);
 		panelDelete.setLayout(null);
 		
 		JLabel lblNewLabel_2 = new JLabel("Search Movie Information");
 		lblNewLabel_2.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_2.setBounds(6, 8, 1322, 45);
+		lblNewLabel_2.setBounds(6, 8, 1053, 45);
 		lblNewLabel_2.setFont(new Font("Comic Sans MS", Font.PLAIN, 21));
 		panelDelete.add(lblNewLabel_2);
 		
 		mDIcon = new JLabel("");
 		mDIcon.setOpaque(true);
 		mDIcon.setBackground(new Color(204, 0, 0));
-		mDIcon.setBounds(42, 65, 300, 400);
+		mDIcon.setBounds(20, 65, 250, 350);
 		panelDelete.add(mDIcon);
 		
 		JLabel lblNewLabel_3 = new JLabel("Movie Name");
-		lblNewLabel_3.setBounds(383, 146, 100, 23);
+		lblNewLabel_3.setBounds(288, 116, 100, 23);
 		lblNewLabel_3.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
 		panelDelete.add(lblNewLabel_3);
 		
 		lblDmovieName = new JLabel(":");
-		lblDmovieName.setBounds(543, 141, 250, 36);
+		lblDmovieName.setBounds(432, 111, 218, 36);
 		panelDelete.add(lblDmovieName);
 		
 		JLabel lblLanguage = new JLabel("Language");
 		lblLanguage.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblLanguage.setBounds(383, 194, 100, 23);
+		lblLanguage.setBounds(288, 164, 100, 23);
 		panelDelete.add(lblLanguage);
 		
 		lblDlanguage = new JLabel(":");
-		lblDlanguage.setBounds(543, 189, 250, 36);
+		lblDlanguage.setBounds(432, 159, 218, 36);
 		panelDelete.add(lblDlanguage);
 		
 		JLabel lblSubtitle = new JLabel("Subtitle");
 		lblSubtitle.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblSubtitle.setBounds(383, 242, 100, 23);
+		lblSubtitle.setBounds(288, 212, 100, 23);
 		panelDelete.add(lblSubtitle);
 		
 		lblDsubtitle = new JLabel(":");
-		lblDsubtitle.setBounds(543, 237, 250, 36);
+		lblDsubtitle.setBounds(432, 207, 218, 36);
 		panelDelete.add(lblDsubtitle);
 		
 		JLabel lblFormats = new JLabel("Formats");
 		lblFormats.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblFormats.setBounds(383, 289, 100, 23);
+		lblFormats.setBounds(288, 259, 100, 23);
 		panelDelete.add(lblFormats);
 		
 		JLabel lblRunningTime = new JLabel("Running Time");
 		lblRunningTime.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblRunningTime.setBounds(383, 338, 108, 23);
+		lblRunningTime.setBounds(288, 308, 108, 23);
 		panelDelete.add(lblRunningTime);
 		
 		lblDrunningtime = new JLabel(":");
-		lblDrunningtime.setBounds(543, 333, 250, 36);
+		lblDrunningtime.setBounds(432, 303, 218, 36);
 		panelDelete.add(lblDrunningtime);
 		
 		JLabel lblGenre = new JLabel("Genre");
 		lblGenre.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblGenre.setBounds(383, 386, 108, 23);
+		lblGenre.setBounds(288, 356, 108, 23);
 		panelDelete.add(lblGenre);
 		
 		lblDgenre = new JLabel(":");
-		lblDgenre.setBounds(543, 381, 250, 36);
+		lblDgenre.setBounds(432, 351, 218, 36);
 		panelDelete.add(lblDgenre);
 		
 		JLabel lblOpeningDate = new JLabel("Opening Date");
 		lblOpeningDate.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblOpeningDate.setBounds(383, 439, 108, 23);
+		lblOpeningDate.setBounds(282, 404, 108, 23);
 		panelDelete.add(lblOpeningDate);
 		
 		JLabel lblCast = new JLabel("Cast");
 		lblCast.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblCast.setBounds(845, 199, 108, 23);
+		lblCast.setBounds(676, 169, 108, 23);
 		panelDelete.add(lblCast);
 		
 		lblDcast = new JLabel(":");
-		lblDcast.setBounds(1005, 194, 250, 36);
+		lblDcast.setBounds(820, 164, 218, 36);
 		panelDelete.add(lblDcast);
 		
 		JLabel lblDirector = new JLabel("Director");
 		lblDirector.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblDirector.setBounds(845, 245, 108, 23);
+		lblDirector.setBounds(676, 215, 108, 23);
 		panelDelete.add(lblDirector);
 		
 		lblDdirector = new JLabel(":");
-		lblDdirector.setBounds(1005, 240, 250, 36);
+		lblDdirector.setBounds(820, 210, 218, 36);
 		panelDelete.add(lblDdirector);
 		
 		JLabel lblImportedFrom = new JLabel("Imported From");
 		lblImportedFrom.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblImportedFrom.setBounds(845, 293, 108, 23);
+		lblImportedFrom.setBounds(676, 263, 108, 23);
 		panelDelete.add(lblImportedFrom);
 		
 		lblDfrom = new JLabel(":");
-		lblDfrom.setBounds(1005, 288, 250, 36);
+		lblDfrom.setBounds(820, 258, 218, 36);
 		panelDelete.add(lblDfrom);
 		
 		JLabel lblImportedPrice = new JLabel("Imported Price");
 		lblImportedPrice.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblImportedPrice.setBounds(845, 340, 108, 23);
+		lblImportedPrice.setBounds(676, 310, 108, 23);
 		panelDelete.add(lblImportedPrice);
 		
 		lblDprice = new JLabel(":");
-		lblDprice.setBounds(1005, 335, 250, 36);
+		lblDprice.setBounds(820, 305, 218, 36);
 		panelDelete.add(lblDprice);
 		
 		JLabel lblImportedDate = new JLabel("Imported Date");
 		lblImportedDate.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblImportedDate.setBounds(845, 391, 108, 23);
+		lblImportedDate.setBounds(676, 361, 108, 23);
 		panelDelete.add(lblImportedDate);
 		
 		JLabel lblMovieSummary = new JLabel("Movie Summary");
 		lblMovieSummary.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblMovieSummary.setBounds(54, 613, 148, 23);
+		lblMovieSummary.setBounds(53, 475, 148, 23);
 		panelDelete.add(lblMovieSummary);
 		
 		mDSummary = new JTextArea();
 		mDSummary.setText("aaa");
 		mDSummary.setEditable(false);
-		mDSummary.setBounds(225, 514, 1032, 238);
+		mDSummary.setBounds(227, 439, 779, 122);
 		panelDelete.add(mDSummary);
 		
 		lblDformats = new JLabel(":");
-		lblDformats.setBounds(543, 285, 250, 36);
+		lblDformats.setBounds(432, 255, 218, 36);
 		panelDelete.add(lblDformats);
 		
 		lblDopendate = new JLabel(":");
-		lblDopendate.setBounds(543, 429, 250, 36);
+		lblDopendate.setBounds(432, 397, 218, 36);
 		panelDelete.add(lblDopendate);
 		
 		lblDdate = new JLabel(":");
-		lblDdate.setBounds(1005, 383, 250, 36);
+		lblDdate.setBounds(820, 353, 218, 36);
 		panelDelete.add(lblDdate);
 		
 		JLabel lblSearch = new JLabel("Search by Name");
-		lblSearch.setBounds(373, 69, 150, 22);
+		lblSearch.setBounds(298, 69, 150, 22);
 		lblSearch.setFont(new Font("Arial Unicode MS", Font.PLAIN, 18));
 		panelDelete.add(lblSearch);
 		
 		mDSearch = new JTextField();
-		mDSearch.setBounds(543, 65, 551, 36);
+		mDSearch.setBounds(468, 65, 397, 36);
 		panelDelete.add(mDSearch);
 		mDSearch.setColumns(10);
 		
 		btnMDSearch = new JButton("Search");
-		btnMDSearch.setBounds(1120, 65, 117, 36);
+		btnMDSearch.setBounds(907, 65, 117, 36);
 		panelDelete.add(btnMDSearch);
 		
 		JLabel lblMovieId = new JLabel("Movie ID ");
 		lblMovieId.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblMovieId.setBounds(845, 151, 108, 23);
+		lblMovieId.setBounds(676, 121, 108, 23);
 		panelDelete.add(lblMovieId);
 		
 		lblDMovieID = new JLabel(":");
-		lblDMovieID.setBounds(1005, 146, 250, 36);
+		lblDMovieID.setBounds(820, 116, 218, 36);
 		panelDelete.add(lblDMovieID);
 		
 		panelButtonDelete = new JPanel();
@@ -1615,29 +1615,29 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 	{
 		panelAddSchedule = new JPanel();
 		panelAddSchedule.setBorder(new LineBorder(new Color(204, 0, 0), 3));
-		panelAddSchedule.setBounds(338, 144, 1304, 792);
+		panelAddSchedule.setBounds(280, 110, 1065, 582);
 		contentPane.add(panelAddSchedule);
 		panelAddSchedule.setLayout(null);
 		
 		JLabel lblNewLabel_2 = new JLabel("Movie Schedule Information");
 		lblNewLabel_2.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_2.setBounds(6, 8, 1322, 45);
+		lblNewLabel_2.setBounds(6, 8, 1053, 45);
 		lblNewLabel_2.setFont(new Font("Comic Sans MS", Font.PLAIN, 21));
 		panelAddSchedule.add(lblNewLabel_2);
 		
 		sAIcon = new JLabel("");
 		sAIcon.setOpaque(true);
 		sAIcon.setBackground(new Color(204, 0, 0));
-		sAIcon.setBounds(42, 65, 300, 400);
+		sAIcon.setBounds(20, 65, 250, 350);
 		panelAddSchedule.add(sAIcon);
 		
 		JLabel lblNewLabel_3 = new JLabel("Movie Name");
-		lblNewLabel_3.setBounds(384, 103, 100, 23);
+		lblNewLabel_3.setBounds(288, 83, 100, 23);
 		lblNewLabel_3.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
 		panelAddSchedule.add(lblNewLabel_3);
 		
 		sAName = new JComboBox();
-		sAName.setBounds(544, 98, 250, 36);
+		sAName.setBounds(433, 78, 218, 36);
 		panelAddSchedule.add(sAName);
 		/*mP = new MoviePart();
 		List<Movie> m = mP.getFromTableMovie();
@@ -1647,70 +1647,70 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 		
 		JLabel lblLanguage = new JLabel("Language");
 		lblLanguage.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblLanguage.setBounds(384, 151, 100, 23);
+		lblLanguage.setBounds(288, 131, 100, 23);
 		panelAddSchedule.add(lblLanguage);
 		
 		sLanguage = new JTextField();
 		sLanguage.setColumns(10);
 		sLanguage.setEditable(false);
-		sLanguage.setBounds(544, 146, 250, 36);
+		sLanguage.setBounds(433, 126, 218, 36);
 		panelAddSchedule.add(sLanguage);
 		
 		JLabel lblSubtitle = new JLabel("Subtitle");
 		lblSubtitle.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblSubtitle.setBounds(384, 199, 100, 23);
+		lblSubtitle.setBounds(288, 179, 100, 23);
 		panelAddSchedule.add(lblSubtitle);
 		
 		sSubtitle = new JTextField();
 		sSubtitle.setColumns(10);
 		sSubtitle.setEditable(false);
-		sSubtitle.setBounds(544, 194, 250, 36);
+		sSubtitle.setBounds(433, 174, 218, 36);
 		panelAddSchedule.add(sSubtitle);
 		
 		JLabel lblFormats = new JLabel("Formats");
 		lblFormats.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblFormats.setBounds(384, 246, 100, 23);
+		lblFormats.setBounds(288, 226, 100, 23);
 		panelAddSchedule.add(lblFormats);
 		
 		JLabel lblRunningTime = new JLabel("Running Time");
 		lblRunningTime.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblRunningTime.setBounds(384, 295, 108, 23);
+		lblRunningTime.setBounds(288, 275, 108, 23);
 		panelAddSchedule.add(lblRunningTime);
 		
 		sRun = new JTextField();
 		sRun.setColumns(10);
 		sRun.setEditable(false);
-		sRun.setBounds(544, 290, 250, 36);
+		sRun.setBounds(433, 270, 218, 36);
 		panelAddSchedule.add(sRun);
 		
 		JLabel lblGenre = new JLabel("Genre");
 		lblGenre.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblGenre.setBounds(384, 343, 108, 23);
+		lblGenre.setBounds(288, 323, 108, 23);
 		panelAddSchedule.add(lblGenre);
 		
 		sGenre = new JTextField();
 		sGenre.setColumns(10);
 		sGenre.setEditable(false);
-		sGenre.setBounds(544, 338, 250, 36);
+		sGenre.setBounds(433, 318, 218, 36);
 		panelAddSchedule.add(sGenre);
 		
 		JLabel lblOpeningDate = new JLabel("Cast");
 		lblOpeningDate.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblOpeningDate.setBounds(384, 396, 108, 23);
+		lblOpeningDate.setBounds(288, 376, 108, 23);
 		panelAddSchedule.add(lblOpeningDate);
 		
 		JLabel lblCast = new JLabel("Time Start");
 		lblCast.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblCast.setBounds(847, 98, 108, 23);
+		lblCast.setBounds(676, 91, 108, 23);
 		panelAddSchedule.add(lblCast);
 		
 		JLabel lblDirector = new JLabel("Hall");
 		lblDirector.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblDirector.setBounds(847, 144, 108, 23);
+		lblDirector.setBounds(676, 137, 108, 23);
 		panelAddSchedule.add(lblDirector);
 		
 		sAHall = new JComboBox();
-		sAHall.setBounds(1007, 139, 250, 36);
+		sAHall.setBounds(828, 132, 218, 36);
 		panelAddSchedule.add(sAHall);
 		
 		sAHall.addItem("- - - Choose - - -");
@@ -1722,12 +1722,12 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 		
 		JLabel lblImportedFrom = new JLabel("Total Seat");
 		lblImportedFrom.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblImportedFrom.setBounds(847, 192, 108, 23);
+		lblImportedFrom.setBounds(676, 185, 108, 23);
 		panelAddSchedule.add(lblImportedFrom);
 		
 		sTSeat = new JTextField();
 		sTSeat.setColumns(10);
-		sTSeat.setBounds(1007, 187, 250, 36);
+		sTSeat.setBounds(828, 180, 218, 36);
 		panelAddSchedule.add(sTSeat);
 		
 		sTSeat.addKeyListener(new KeyListener() {
@@ -1747,12 +1747,12 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 		
 		JLabel lblImportedPrice = new JLabel("Available Seat");
 		lblImportedPrice.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblImportedPrice.setBounds(847, 239, 108, 23);
+		lblImportedPrice.setBounds(676, 232, 108, 23);
 		panelAddSchedule.add(lblImportedPrice);
 		
 		sASeat = new JTextField();
 		sASeat.setColumns(10);
-		sASeat.setBounds(1007, 234, 250, 36);
+		sASeat.setBounds(828, 227, 218, 36);
 		panelAddSchedule.add(sASeat);
 		
 		sASeat.addKeyListener(new KeyListener() {
@@ -1772,35 +1772,35 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 		
 		JLabel lblImportedDate = new JLabel("Ticket Price");
 		lblImportedDate.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblImportedDate.setBounds(847, 290, 108, 23);
+		lblImportedDate.setBounds(676, 283, 108, 23);
 		panelAddSchedule.add(lblImportedDate);
 		
 		JLabel lblMovieSummary = new JLabel("Movie Summary");
 		lblMovieSummary.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblMovieSummary.setBounds(54, 613, 148, 23);
+		lblMovieSummary.setBounds(53, 475, 148, 23);
 		panelAddSchedule.add(lblMovieSummary);
 		
 		sASummary = new JTextArea();
 		sASummary.setText("aaa");
 		sASummary.setEditable(false);
-		sASummary.setBounds(225, 514, 1032, 238);
+		sASummary.setBounds(227, 437, 779, 122);
 		panelAddSchedule.add(sASummary);
 		
 		sFormats = new JTextField();
 		sFormats.setColumns(10);
 		sFormats.setEditable(false);
-		sFormats.setBounds(544, 242, 250, 36);
+		sFormats.setBounds(433, 222, 218, 36);
 		panelAddSchedule.add(sFormats);
 		
 		sCast = new JTextField();
 		sCast.setColumns(10);
 		sCast.setEditable(false);
-		sCast.setBounds(544, 386, 250, 36);
+		sCast.setBounds(433, 366, 218, 36);
 		panelAddSchedule.add(sCast);
 		
 		sTPrice = new JTextField();
 		sTPrice.setColumns(10);
-		sTPrice.setBounds(1007, 282, 250, 36);
+		sTPrice.setBounds(828, 275, 218, 36);
 		panelAddSchedule.add(sTPrice);
 		
 		sTPrice.addKeyListener(new KeyListener() {
@@ -1820,24 +1820,24 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 		
 		JLabel lblScheduleDate = new JLabel("Schedule Date");
 		lblScheduleDate.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblScheduleDate.setBounds(847, 343, 121, 23);
+		lblScheduleDate.setBounds(676, 336, 121, 23);
 		panelAddSchedule.add(lblScheduleDate);
 		
 		sScheduleDate = new JDateChooser();
-		sScheduleDate.setBounds(1007, 338, 250, 36);
+		sScheduleDate.setBounds(828, 331, 218, 36);
 		panelAddSchedule.add(sScheduleDate);
 		
 		java.util.Date date = new java.util.Date();
 		SpinnerDateModel sm = new SpinnerDateModel(date,null,null,Calendar.HOUR_OF_DAY ) ;
 		spinnerSTime = new JSpinner(sm);
-		spinnerSTime.setBounds(1007, 90, 250, 36);
+		spinnerSTime.setBounds(828, 83, 218, 36);
 		panelAddSchedule.add(spinnerSTime);
 		
 		JSpinner.DateEditor ed = new JSpinner.DateEditor(spinnerSTime, "HH:mm a");
 		spinnerSTime.setEditor(ed);
 		
 		panelButtonAddSch = new JPanel();
-		panelButtonAddSch.setBounds(700, 948, 610, 65);
+		panelButtonAddSch.setBounds(537, 703, 610, 65);
 		contentPane.add(panelButtonAddSch);
 		panelButtonAddSch.setLayout(null);
 		
@@ -1891,7 +1891,7 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 	public void viewMovieScheduleUI()
 	{
 		spViewSchedule = new JScrollPane();
-		spViewSchedule.setBounds(298, 141, 1382, 909);
+		spViewSchedule.setBounds(257, 114, 1109, 654);
 		spViewSchedule.getViewport().setBackground(new Color(238, 238, 238));
 		contentPane.add(spViewSchedule);
 		spViewSchedule.setBorder(BorderFactory.createEmptyBorder());
@@ -1902,13 +1902,13 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 	{
 		panelSearchSch = new JPanel();
 		panelSearchSch.setBorder(new LineBorder(new Color(204, 0, 0), 3));
-		panelSearchSch.setBounds(338, 144, 1304, 792);
+		panelSearchSch.setBounds(280, 110, 1065, 582);
 		contentPane.add(panelSearchSch);
 		panelSearchSch.setLayout(null);
 		
 		JLabel lblNewLabel_2 = new JLabel("Search Movie Schedule");
 		lblNewLabel_2.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_2.setBounds(6, 8, 1322, 45);
+		lblNewLabel_2.setBounds(6, 8, 1053, 45);
 		lblNewLabel_2.setFont(new Font("Comic Sans MS", Font.PLAIN, 21));
 		panelSearchSch.add(lblNewLabel_2);
 		
@@ -1922,7 +1922,7 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 		
 		JPanel panel_1 = new JPanel();
 		panel_1.setBorder(null);
-		panel_1.setBounds(39, 132, 1220, 623);
+		panel_1.setBounds(22, 132, 1021, 428);
 		panel_1.setLayout(new BorderLayout());
 		panelSearchSch.add(panel_1);
 		
@@ -1983,19 +1983,19 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 		
 		JLabel lblSearch_3 = new JLabel("Search : ");
 		lblSearch_3.setFont(new Font("Arial Unicode MS", Font.PLAIN, 18));
-		lblSearch_3.setBounds(220, 77, 88, 25);
+		lblSearch_3.setBounds(85, 78, 88, 25);
 		panelSearchSch.add(lblSearch_3);
 		
 		btnSSearch = new JButton("Search");
-		btnSSearch.setBounds(999, 72, 117, 35);
+		btnSSearch.setBounds(864, 73, 117, 35);
 		panelSearchSch.add(btnSSearch);
 		
 		sSearch = new JDateChooser();
-		sSearch.setBounds(371, 72, 551, 35);
+		sSearch.setBounds(236, 73, 551, 35);
 		panelSearchSch.add(sSearch);
 		
 		panelButtonSearchSch = new JPanel();
-		panelButtonSearchSch.setBounds(700, 948, 610, 65);
+		panelButtonSearchSch.setBounds(542, 703, 610, 65);
 		contentPane.add(panelButtonSearchSch);
 		panelButtonSearchSch.setLayout(null);
 		
@@ -2027,94 +2027,94 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 	{
 		panelUpdateSch = new JPanel();
 		panelUpdateSch.setBorder(new LineBorder(new Color(204, 0, 0), 3));
-		panelUpdateSch.setBounds(338, 144, 1304, 792);
+		panelUpdateSch.setBounds(280, 110, 1065, 607);
 		contentPane.add(panelUpdateSch);
 		panelUpdateSch.setLayout(null);
 		
 		JLabel lblNewLabel_2 = new JLabel("Movie Schedule Information");
 		lblNewLabel_2.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_2.setBounds(6, 8, 1322, 45);
+		lblNewLabel_2.setBounds(6, 8, 1053, 45);
 		lblNewLabel_2.setFont(new Font("Comic Sans MS", Font.PLAIN, 21));
 		panelUpdateSch.add(lblNewLabel_2);
 		
 		sUIcon = new JLabel("");
 		sUIcon.setOpaque(true);
 		sUIcon.setBackground(new Color(204, 0, 0));
-		sUIcon.setBounds(42, 65, 300, 400);
+		sUIcon.setBounds(20, 83, 250, 350);
 		panelUpdateSch.add(sUIcon);
 		
 		JLabel lblNewLabel_3 = new JLabel("Movie Name");
-		lblNewLabel_3.setBounds(383, 149, 100, 23);
+		lblNewLabel_3.setBounds(288, 136, 100, 23);
 		lblNewLabel_3.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
 		panelUpdateSch.add(lblNewLabel_3);
 		
 		uAName = new JComboBox();
-		uAName.setBounds(543, 144, 250, 36);
+		uAName.setBounds(432, 131, 218, 36);
 		panelUpdateSch.add(uAName);
 		
 		JLabel lblLanguage = new JLabel("Language");
 		lblLanguage.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblLanguage.setBounds(383, 197, 100, 23);
+		lblLanguage.setBounds(288, 184, 100, 23);
 		panelUpdateSch.add(lblLanguage);
 		
 		uLanguage = new JTextField();
 		uLanguage.setColumns(10);
 		uLanguage.setEditable(false);
-		uLanguage.setBounds(543, 192, 250, 36);
+		uLanguage.setBounds(432, 179, 218, 36);
 		panelUpdateSch.add(uLanguage);
 		
 		JLabel lblSubtitle = new JLabel("Subtitle");
 		lblSubtitle.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblSubtitle.setBounds(383, 245, 100, 23);
+		lblSubtitle.setBounds(288, 232, 100, 23);
 		panelUpdateSch.add(lblSubtitle);
 		
 		uSubtitle = new JTextField();
 		uSubtitle.setColumns(10);
 		uSubtitle.setEditable(false);
-		uSubtitle.setBounds(543, 240, 250, 36);
+		uSubtitle.setBounds(432, 227, 218, 36);
 		panelUpdateSch.add(uSubtitle);
 		
 		JLabel lblFormats = new JLabel("Formats");
 		lblFormats.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblFormats.setBounds(383, 292, 100, 23);
+		lblFormats.setBounds(288, 279, 100, 23);
 		panelUpdateSch.add(lblFormats);
 		
 		JLabel lblRunningTime = new JLabel("Running Time");
 		lblRunningTime.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblRunningTime.setBounds(383, 341, 108, 23);
+		lblRunningTime.setBounds(288, 328, 108, 23);
 		panelUpdateSch.add(lblRunningTime);
 		
 		uRun = new JTextField();
 		uRun.setColumns(10);
 		uRun.setEditable(false);
-		uRun.setBounds(543, 336, 250, 36);
+		uRun.setBounds(432, 323, 218, 36);
 		panelUpdateSch.add(uRun);
 		
 		JLabel lblGenre = new JLabel("Genre");
 		lblGenre.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblGenre.setBounds(383, 389, 108, 23);
+		lblGenre.setBounds(288, 376, 108, 23);
 		panelUpdateSch.add(lblGenre);
 		
 		uGenre = new JTextField();
 		uGenre.setColumns(10);
 		uGenre.setEditable(false);
-		uGenre.setBounds(543, 384, 250, 36);
+		uGenre.setBounds(432, 371, 218, 36);
 		panelUpdateSch.add(uGenre);
 		
 		JLabel lblOpeningDate = new JLabel("Cast");
 		lblOpeningDate.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblOpeningDate.setBounds(383, 442, 108, 23);
+		lblOpeningDate.setBounds(288, 429, 108, 23);
 		panelUpdateSch.add(lblOpeningDate);
 		
 		JLabel lblCast = new JLabel("Time Start");
 		lblCast.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblCast.setBounds(847, 197, 108, 23);
+		lblCast.setBounds(676, 189, 108, 23);
 		panelUpdateSch.add(lblCast);
 		
 		java.util.Date date = new java.util.Date();
 		SpinnerDateModel sm = new SpinnerDateModel(date,null,null,Calendar.HOUR_OF_DAY ) ;
 		spinnerUTime = new JSpinner(sm);
-		spinnerUTime.setBounds(1007, 192, 250, 36);
+		spinnerUTime.setBounds(820, 184, 219, 36);
 		panelUpdateSch.add(spinnerUTime);
 		
 		JSpinner.DateEditor ed = new JSpinner.DateEditor(spinnerUTime, "HH:mm a");
@@ -2122,11 +2122,11 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 			
 		JLabel lblDirector = new JLabel("Hall");
 		lblDirector.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblDirector.setBounds(847, 245, 108, 23);
+		lblDirector.setBounds(676, 237, 108, 23);
 		panelUpdateSch.add(lblDirector);
 		
 		uAHall = new JComboBox();
-		uAHall.setBounds(1007, 240, 250, 36);
+		uAHall.setBounds(820, 232, 219, 36);
 		panelUpdateSch.add(uAHall);
 		
 		uAHall.addItem("- - - Choose - - -");
@@ -2138,12 +2138,12 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 		
 		JLabel lblImportedFrom = new JLabel("Total Seat");
 		lblImportedFrom.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblImportedFrom.setBounds(847, 292, 108, 23);
+		lblImportedFrom.setBounds(676, 284, 108, 23);
 		panelUpdateSch.add(lblImportedFrom);
 		
 		uTSeat = new JTextField();
 		uTSeat.setColumns(10);
-		uTSeat.setBounds(1007, 288, 250, 36);
+		uTSeat.setBounds(820, 280, 219, 36);
 		panelUpdateSch.add(uTSeat);
 		
 		uTSeat.addKeyListener(new KeyListener() {
@@ -2162,12 +2162,12 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 		});
 		JLabel lblImportedPrice = new JLabel("Available Seat");
 		lblImportedPrice.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblImportedPrice.setBounds(847, 341, 108, 23);
+		lblImportedPrice.setBounds(676, 333, 108, 23);
 		panelUpdateSch.add(lblImportedPrice);
 		
 		uASeat= new JTextField();
 		uASeat.setColumns(10);
-		uASeat.setBounds(1007, 336, 250, 36);
+		uASeat.setBounds(820, 328, 219, 36);
 		panelUpdateSch.add(uASeat);
 		
 		uASeat.addKeyListener(new KeyListener() {
@@ -2187,35 +2187,35 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 		
 		JLabel lblImportedDate = new JLabel("Ticket Price");
 		lblImportedDate.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblImportedDate.setBounds(847, 389, 108, 23);
+		lblImportedDate.setBounds(676, 381, 108, 23);
 		panelUpdateSch.add(lblImportedDate);
 		
 		JLabel lblMovieSummary = new JLabel("Movie Summary");
 		lblMovieSummary.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblMovieSummary.setBounds(54, 613, 148, 23);
+		lblMovieSummary.setBounds(53, 505, 148, 23);
 		panelUpdateSch.add(lblMovieSummary);
 		
 		uASummary = new JTextArea();
 		uASummary.setText("aaa");
 		uASummary.setEditable(false);
-		uASummary.setBounds(225, 514, 1032, 238);
+		uASummary.setBounds(227, 470, 779, 122);
 		panelUpdateSch.add(uASummary);
 		
 		uFormats = new JTextField();
 		uFormats.setColumns(10);
 		uFormats.setEditable(false);
-		uFormats.setBounds(543, 288, 250, 36);
+		uFormats.setBounds(432, 275, 218, 36);
 		panelUpdateSch.add(uFormats);
 		
 		uCast = new JTextField();
 		uCast.setColumns(10);
 		uCast.setEditable(false);
-		uCast.setBounds(543, 432, 250, 36);
+		uCast.setBounds(432, 419, 218, 36);
 		panelUpdateSch.add(uCast);
 		
 		uTPrice = new JTextField();
 		uTPrice.setColumns(10);
-		uTPrice.setBounds(1007, 384, 250, 36);
+		uTPrice.setBounds(820, 376, 219, 36);
 		panelUpdateSch.add(uTPrice);
 		
 		uTPrice.addKeyListener(new KeyListener() {
@@ -2234,44 +2234,44 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 		});
 		JLabel lblScheduleDate = new JLabel("Schedule Date");
 		lblScheduleDate.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblScheduleDate.setBounds(847, 442, 121, 23);
+		lblScheduleDate.setBounds(676, 434, 121, 23);
 		panelUpdateSch.add(lblScheduleDate);
 		
 		uScheduleDate = new JDateChooser();
-		uScheduleDate.setBounds(1007, 432, 250, 36);
+		uScheduleDate.setBounds(820, 424, 219, 36);
 		panelUpdateSch.add(uScheduleDate);
 		
 		JLabel lblSearch_2 = new JLabel("Search");
 		lblSearch_2.setFont(new Font("Arial Unicode MS", Font.PLAIN, 18));
-		lblSearch_2.setBounds(383, 69, 61, 23);
+		lblSearch_2.setBounds(298, 69, 61, 23);
 		panelUpdateSch.add(lblSearch_2);
 		
 		uSearch= new JTextField();
-		uSearch.setBounds(544, 65, 551, 36);
+		uSearch.setBounds(459, 65, 397, 36);
 		panelUpdateSch.add(uSearch);
 		uSearch.setColumns(10);
 		
 		btnUSearch = new JButton("Search");
-		btnUSearch.setBounds(1128, 65, 117, 36);
+		btnUSearch.setBounds(907, 65, 117, 36);
 		panelUpdateSch.add(btnUSearch);
 		
 		JLabel lblNewLabel_8 = new JLabel("e.g MovieName/Hall/TimeStart");
-		lblNewLabel_8.setBounds(383, 103, 207, 16);
+		lblNewLabel_8.setBounds(298, 103, 207, 16);
 		panelUpdateSch.add(lblNewLabel_8);
 		
 		JLabel lblScheduleId_1 = new JLabel("Schedule ID ");
 		lblScheduleId_1.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblScheduleId_1.setBounds(847, 149, 108, 23);
+		lblScheduleId_1.setBounds(676, 141, 108, 23);
 		panelUpdateSch.add(lblScheduleId_1);
 		
 		uScheduleID = new JTextField();
 		uScheduleID.setColumns(10);
 		uScheduleID.setEditable(false);
-		uScheduleID.setBounds(1007, 144, 250, 36);
+		uScheduleID.setBounds(820, 136, 219, 36);
 		panelUpdateSch.add(uScheduleID);
 		
 		panelButtonUpdateSch = new JPanel();
-		panelButtonUpdateSch.setBounds(700, 948, 610, 65);
+		panelButtonUpdateSch.setBounds(530, 718, 610, 65);
 		contentPane.add(panelButtonUpdateSch);
 		panelButtonUpdateSch.setLayout(null);
 		
@@ -2325,179 +2325,179 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 	{
 		panelDeleteSch = new JPanel();
 		panelDeleteSch.setBorder(new LineBorder(new Color(204, 0, 0), 3));
-		panelDeleteSch.setBounds(338, 144, 1304, 792);
+		panelDeleteSch.setBounds(280, 110, 1065, 607);
 		contentPane.add(panelDeleteSch);
 		panelDeleteSch.setLayout(null);
 		
 		JLabel lblNewLabel_2 = new JLabel("Movie Schedule Information");
 		lblNewLabel_2.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_2.setBounds(6, 8, 1322, 45);
+		lblNewLabel_2.setBounds(6, 8, 1053, 45);
 		lblNewLabel_2.setFont(new Font("Comic Sans MS", Font.PLAIN, 21));
 		panelDeleteSch.add(lblNewLabel_2);
 		
 		sDIcon = new JLabel("");
 		sDIcon.setOpaque(true);
 		sDIcon.setBackground(new Color(204, 0, 0));
-		sDIcon.setBounds(42, 65, 300, 400);
+		sDIcon.setBounds(20, 65, 250, 350);
 		panelDeleteSch.add(sDIcon);
 		
 		JLabel lblNewLabel_3 = new JLabel("Movie Name");
-		lblNewLabel_3.setBounds(383, 149, 100, 23);
+		lblNewLabel_3.setBounds(288, 136, 100, 23);
 		lblNewLabel_3.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
 		panelDeleteSch.add(lblNewLabel_3);
 		
 		dName = new JLabel(":");
-		dName.setBounds(543, 144, 250, 36);
+		dName.setBounds(432, 131, 218, 36);
 		panelDeleteSch.add(dName);
 		
 		JLabel lblLanguage = new JLabel("Language");
 		lblLanguage.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblLanguage.setBounds(383, 197, 100, 23);
+		lblLanguage.setBounds(288, 184, 100, 23);
 		panelDeleteSch.add(lblLanguage);
 		
 		dLanguage = new JLabel(":");
-		dLanguage.setBounds(543, 192, 250, 36);
+		dLanguage.setBounds(432, 179, 218, 36);
 		panelDeleteSch.add(dLanguage);
 		
 		JLabel lblSubtitle = new JLabel("Subtitle");
 		lblSubtitle.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblSubtitle.setBounds(383, 245, 100, 23);
+		lblSubtitle.setBounds(288, 232, 100, 23);
 		panelDeleteSch.add(lblSubtitle);
 		
 		dSubtitle = new JLabel(":");
-		dSubtitle.setBounds(543, 240, 250, 36);
+		dSubtitle.setBounds(432, 227, 218, 36);
 		panelDeleteSch.add(dSubtitle);
 		
 		JLabel lblFormats = new JLabel("Formats");
 		lblFormats.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblFormats.setBounds(383, 292, 100, 23);
+		lblFormats.setBounds(288, 279, 100, 23);
 		panelDeleteSch.add(lblFormats);
 		
 		JLabel lblRunningTime = new JLabel("Running Time");
 		lblRunningTime.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblRunningTime.setBounds(383, 341, 108, 23);
+		lblRunningTime.setBounds(288, 328, 108, 23);
 		panelDeleteSch.add(lblRunningTime);
 		
 		dRun = new JLabel(":");
-		dRun.setBounds(543, 336, 250, 36);
+		dRun.setBounds(432, 323, 218, 36);
 		panelDeleteSch.add(dRun);
 		
 		JLabel lblGenre = new JLabel("Genre");
 		lblGenre.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblGenre.setBounds(383, 389, 108, 23);
+		lblGenre.setBounds(288, 376, 108, 23);
 		panelDeleteSch.add(lblGenre);
 		
 		dGenre = new JLabel(":");
-		dGenre.setBounds(543, 384, 250, 36);
+		dGenre.setBounds(432, 371, 218, 36);
 		panelDeleteSch.add(dGenre);
 		
 		JLabel lblOpeningDate = new JLabel("Cast");
 		lblOpeningDate.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblOpeningDate.setBounds(383, 442, 108, 23);
+		lblOpeningDate.setBounds(288, 429, 108, 23);
 		panelDeleteSch.add(lblOpeningDate);
 		
 		JLabel lblCast = new JLabel("Time Start");
 		lblCast.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblCast.setBounds(847, 197, 108, 23);
+		lblCast.setBounds(676, 189, 108, 23);
 		panelDeleteSch.add(lblCast);
 		
 		dTime = new JLabel(":");
-		dTime.setBounds(1007, 192, 250, 36);
+		dTime.setBounds(826, 184, 218, 36);
 		panelDeleteSch.add(dTime);
 		
 		JLabel lblDirector = new JLabel("Hall");
 		lblDirector.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblDirector.setBounds(847, 243, 108, 23);
+		lblDirector.setBounds(676, 235, 108, 23);
 		panelDeleteSch.add(lblDirector);
 		
 		dHall= new JLabel(":");
-		dHall.setBounds(1007, 238, 250, 36);
+		dHall.setBounds(826, 230, 218, 36);
 		panelDeleteSch.add(dHall);
 		
 		JLabel lblImportedFrom = new JLabel("Total Seat");
 		lblImportedFrom.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblImportedFrom.setBounds(847, 291, 108, 23);
+		lblImportedFrom.setBounds(676, 283, 108, 23);
 		panelDeleteSch.add(lblImportedFrom);
 		
 		dTSeat= new JLabel(":");
-		dTSeat.setBounds(1007, 286, 250, 36);
+		dTSeat.setBounds(826, 278, 218, 36);
 		panelDeleteSch.add(dTSeat);
 		
 		JLabel lblImportedPrice = new JLabel("Available Seat");
 		lblImportedPrice.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblImportedPrice.setBounds(847, 338, 108, 23);
+		lblImportedPrice.setBounds(676, 330, 108, 23);
 		panelDeleteSch.add(lblImportedPrice);
 		
 		dASeat = new JLabel(":");
-		dASeat.setBounds(1007, 333, 250, 36);
+		dASeat.setBounds(826, 325, 218, 36);
 		panelDeleteSch.add(dASeat);
 		
 		JLabel lblImportedDate = new JLabel("Ticket Price");
 		lblImportedDate.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblImportedDate.setBounds(847, 389, 108, 23);
+		lblImportedDate.setBounds(676, 381, 108, 23);
 		panelDeleteSch.add(lblImportedDate);
 		
 		JLabel lblMovieSummary = new JLabel("Movie Summary");
 		lblMovieSummary.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblMovieSummary.setBounds(54, 613, 148, 23);
+		lblMovieSummary.setBounds(53, 505, 148, 23);
 		panelDeleteSch.add(lblMovieSummary);
 		
 		dASummary = new JTextArea();
 		dASummary.setText("aaa");
 		dASummary.setEditable(false);
-		dASummary.setBounds(225, 514, 1032, 238);
+		dASummary.setBounds(227, 470, 799, 122);
 		panelDeleteSch.add(dASummary);
 		
 		dFormats = new JLabel(":");
-		dFormats.setBounds(543, 288, 250, 36);
+		dFormats.setBounds(432, 275, 218, 36);
 		panelDeleteSch.add(dFormats);
 		
 		dCast = new JLabel(":");
-		dCast.setBounds(543, 432, 250, 36);
+		dCast.setBounds(432, 419, 218, 36);
 		panelDeleteSch.add(dCast);
 		
 		dTPrice= new JLabel(":");
-		dTPrice.setBounds(1007, 381, 250, 36);
+		dTPrice.setBounds(826, 373, 218, 36);
 		panelDeleteSch.add(dTPrice);
 		
 		JLabel lblScheduleDate = new JLabel("Schedule Date");
 		lblScheduleDate.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblScheduleDate.setBounds(847, 442, 121, 23);
+		lblScheduleDate.setBounds(676, 434, 121, 23);
 		panelDeleteSch.add(lblScheduleDate);
 		
 		dScheduleDate = new JLabel(":");
-		dScheduleDate.setBounds(1007, 437, 250, 36);
+		dScheduleDate.setBounds(826, 429, 218, 36);
 		panelDeleteSch.add(dScheduleDate);
 		
 		JLabel lblSearch_2 = new JLabel("Search");
 		lblSearch_2.setFont(new Font("Arial Unicode MS", Font.PLAIN, 18));
-		lblSearch_2.setBounds(383, 69, 61, 23);
+		lblSearch_2.setBounds(298, 69, 61, 23);
 		panelDeleteSch.add(lblSearch_2);
 		
 		dSearch = new JTextField();
-		dSearch.setBounds(544, 65, 551, 36);
+		dSearch.setBounds(459, 65, 397, 36);
 		panelDeleteSch.add(dSearch);
 		dSearch.setColumns(10);
 		
 		btnDSearch = new JButton("Search");
-		btnDSearch.setBounds(1128, 65, 117, 36);
+		btnDSearch.setBounds(907, 65, 117, 36);
 		panelDeleteSch.add(btnDSearch);
 		
 		JLabel lblNewLabel_8 = new JLabel("e.g MovieName/Hall/TimeStart");
-		lblNewLabel_8.setBounds(383, 103, 207, 16);
+		lblNewLabel_8.setBounds(298, 103, 207, 16);
 		panelDeleteSch.add(lblNewLabel_8);
 		
 		JLabel lblScheduleId = new JLabel("Schedule ID ");
 		lblScheduleId.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblScheduleId.setBounds(847, 149, 108, 23);
+		lblScheduleId.setBounds(676, 141, 108, 23);
 		panelDeleteSch.add(lblScheduleId);
 		
 		dScheduleID = new JLabel(":");
-		dScheduleID.setBounds(1007, 144, 250, 36);
+		dScheduleID.setBounds(826, 136, 218, 36);
 		panelDeleteSch.add(dScheduleID);
 		
 		panelButtonDeleteSch = new JPanel();
-		panelButtonDeleteSch.setBounds(700, 948, 610, 65);
+		panelButtonDeleteSch.setBounds(530, 718, 610, 65);
 		contentPane.add(panelButtonDeleteSch);
 		panelButtonDeleteSch.setLayout(null);
 		
@@ -2530,18 +2530,18 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 	{
 		panelAddEmployee = new JPanel();
 		panelAddEmployee.setBorder(new LineBorder(new Color(204, 0, 0), 3));
-		panelAddEmployee.setBounds(338, 144, 1304, 792);
+		panelAddEmployee.setBounds(280, 110, 1065, 592);
 		contentPane.add(panelAddEmployee);
 		panelAddEmployee.setLayout(null);
 		
 		JLabel lblNewLabel_2 = new JLabel("Employee Information");
 		lblNewLabel_2.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_2.setBounds(6, 8, 1322, 65);
+		lblNewLabel_2.setBounds(6, 6, 1053, 45);
 		lblNewLabel_2.setFont(new Font("Comic Sans MS", Font.PLAIN, 21));
 		panelAddEmployee.add(lblNewLabel_2);
 		
 		JPanel panel_1 = new JPanel();
-		panel_1.setBounds(21, 75, 1266, 180);
+		panel_1.setBounds(18, 52, 1027, 146);
 		panelAddEmployee.add(panel_1);
 		
 		panel_1.setBorder(BorderFactory.createTitledBorder(" Personal Information "));
@@ -2549,31 +2549,31 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 		
 		JLabel lblNewLabel_9 = new JLabel("First Name :");
 		lblNewLabel_9.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblNewLabel_9.setBounds(27, 48, 90, 23);
+		lblNewLabel_9.setBounds(18, 37, 90, 23);
 		panel_1.add(lblNewLabel_9);
 		
 		fName = new JTextField();
-		fName.setBounds(150, 44, 242, 35);
+		fName.setBounds(141, 33, 191, 35);
 		panel_1.add(fName);
 		fName.setColumns(10);
 		
 		JLabel lblLastName = new JLabel("Last Name :");
 		lblLastName.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblLastName.setBounds(451, 48, 90, 23);
+		lblLastName.setBounds(360, 37, 90, 23);
 		panel_1.add(lblLastName);
 		
 		lName = new JTextField();
 		lName.setColumns(10);
-		lName.setBounds(574, 44, 242, 35);
+		lName.setBounds(483, 33, 191, 35);
 		panel_1.add(lName);
 		
 		JLabel lblGener = new JLabel("Gender :");
 		lblGener.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblGener.setBounds(876, 48, 90, 23);
+		lblGener.setBounds(705, 37, 90, 23);
 		panel_1.add(lblGener);
 		
 		gender = new JComboBox();
-		gender.setBounds(999, 44, 242, 35);
+		gender.setBounds(828, 33, 191, 35);
 		panel_1.add(gender);
 		
 		gender.addItem("- - - Choose - - -");
@@ -2582,17 +2582,17 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 		
 		JLabel lblDateOfBirth = new JLabel("Date of Birth :");
 		lblDateOfBirth.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblDateOfBirth.setBounds(27, 115, 111, 23);
+		lblDateOfBirth.setBounds(18, 91, 111, 23);
 		panel_1.add(lblDateOfBirth);
 		
 		JLabel lblSalary = new JLabel("Salary :");
 		lblSalary.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblSalary.setBounds(451, 115, 90, 23);
+		lblSalary.setBounds(360, 91, 90, 23);
 		panel_1.add(lblSalary);
 		
 		lSalary = new JTextField();
 		lSalary.setColumns(10);
-		lSalary.setBounds(574, 111, 242, 35);
+		lSalary.setBounds(483, 87, 191, 35);
 		panel_1.add(lSalary);
 		lSalary.addKeyListener(new KeyListener() {
 			@Override
@@ -2610,116 +2610,116 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 		});
 		
 		dob = new JDateChooser();
-		dob.setBounds(150, 111, 242, 35);
+		dob.setBounds(141, 87, 191, 35);
 		panel_1.add(dob);
 		
 		JPanel panel_2 = new JPanel();
 		panel_2.setLayout(null);
 		panel_2.setBorder(BorderFactory.createTitledBorder(" Address Information "));
-		panel_2.setBounds(21, 291, 1266, 180);
+		panel_2.setBounds(18, 210, 1027, 146);
 		panelAddEmployee.add(panel_2);
 		
 		JLabel lblStreet = new JLabel("Street :");
 		lblStreet.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblStreet.setBounds(27, 48, 90, 23);
+		lblStreet.setBounds(27, 41, 90, 23);
 		panel_2.add(lblStreet);
 		
 		street = new JTextField();
 		street.setColumns(10);
-		street.setBounds(150, 44, 242, 35);
+		street.setBounds(150, 37, 191, 35);
 		panel_2.add(street);
 		
 		JLabel lblDistrict = new JLabel("District : ");
 		lblDistrict.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblDistrict.setBounds(451, 48, 90, 23);
+		lblDistrict.setBounds(360, 41, 90, 23);
 		panel_2.add(lblDistrict);
 		
 		district = new JTextField();
 		district.setColumns(10);
-		district.setBounds(574, 44, 242, 35);
+		district.setBounds(483, 37, 191, 35);
 		panel_2.add(district);
 		
 		JLabel lblCommune = new JLabel("Commune : ");
 		lblCommune.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblCommune.setBounds(876, 48, 90, 23);
+		lblCommune.setBounds(705, 41, 90, 23);
 		panel_2.add(lblCommune);
 		
 		commune = new JTextField();
 		commune.setColumns(10);
-		commune.setBounds(999, 44, 242, 35);
+		commune.setBounds(828, 37, 191, 35);
 		panel_2.add(commune);
 		
 		JLabel lblCityProvince = new JLabel("City / Province : ");
 		lblCityProvince.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblCityProvince.setBounds(27, 115, 123, 23);
+		lblCityProvince.setBounds(27, 92, 123, 23);
 		panel_2.add(lblCityProvince);
 		
 		city = new JTextField();
 		city.setColumns(10);
-		city.setBounds(150, 111, 242, 35);
+		city.setBounds(150, 88, 191, 35);
 		panel_2.add(city);
 		
 		JLabel lblCountry = new JLabel("Country : ");
 		lblCountry.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblCountry.setBounds(451, 115, 90, 23);
+		lblCountry.setBounds(360, 92, 90, 23);
 		panel_2.add(lblCountry);
 		
 		country = new JTextField();
 		country.setColumns(10);
-		country.setBounds(574, 111, 242, 35);
+		country.setBounds(483, 88, 191, 35);
 		panel_2.add(country);
 		
 		JPanel panel_3 = new JPanel();
 		panel_3.setLayout(null);
 		panel_3.setBorder(BorderFactory.createTitledBorder(" Contact Information "));
-		panel_3.setBounds(21, 510, 1266, 106);
+		panel_3.setBounds(18, 368, 1027, 92);
 		panelAddEmployee.add(panel_3);
 		
 		JLabel lblMobile = new JLabel("Mobile : ");
 		lblMobile.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblMobile.setBounds(27, 48, 90, 23);
+		lblMobile.setBounds(27, 41, 90, 23);
 		panel_3.add(lblMobile);
 		
 		mobile = new JTextField();
 		mobile.setColumns(10);
-		mobile.setBounds(150, 44, 242, 35);
+		mobile.setBounds(150, 37, 191, 35);
 		panel_3.add(mobile);
 		
 		JLabel lblEmail = new JLabel("Email : ");
 		lblEmail.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblEmail.setBounds(451, 48, 90, 23);
+		lblEmail.setBounds(360, 41, 90, 23);
 		panel_3.add(lblEmail);
 		
 		email = new JTextField();
 		email.setColumns(10);
-		email.setBounds(574, 44, 242, 35);
+		email.setBounds(483, 37, 191, 35);
 		panel_3.add(email);
 		
 		JPanel panel_4 = new JPanel();
 		panel_4.setLayout(null);
 		panel_4.setBorder(BorderFactory.createTitledBorder(" Official Information "));
-		panel_4.setBounds(21, 655, 1266, 106);
+		panel_4.setBounds(18, 472, 1027, 92);
 		panelAddEmployee.add(panel_4);
 		
 		JLabel lblUsername = new JLabel("Username : ");
 		lblUsername.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblUsername.setBounds(27, 48, 90, 23);
+		lblUsername.setBounds(26, 41, 90, 23);
 		panel_4.add(lblUsername);
 		
 		username = new JTextField();
 		username.setColumns(10);
 		username.setEditable(false);
-		username.setBounds(150, 44, 242, 35);
+		username.setBounds(149, 37, 191, 35);
 		panel_4.add(username);
 		
 		JLabel lblPassword = new JLabel("Password : ");
 		lblPassword.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblPassword.setBounds(451, 48, 90, 23);
+		lblPassword.setBounds(360, 41, 90, 23);
 		panel_4.add(lblPassword);
 		
 		password = new JTextField();
 		password.setColumns(10);
-		password.setBounds(574, 44, 242, 35);
+		password.setBounds(483, 37, 191, 35);
 		panel_4.add(password);
 		
 		((javax.swing.border.TitledBorder) panel_1.getBorder()).
@@ -2743,7 +2743,7 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 		panel_4.repaint();
 	
 		panelButtonAddEmployee = new JPanel();
-		panelButtonAddEmployee.setBounds(700, 948, 610, 65);
+		panelButtonAddEmployee.setBounds(538, 706, 610, 65);
 		contentPane.add(panelButtonAddEmployee);
 		panelButtonAddEmployee.setLayout(null);
 		
@@ -2812,12 +2812,12 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 	{
 		panelViewEmployee = new JPanel();
 		panelViewEmployee.setBorder(new LineBorder(new Color(204, 0, 0), 3));
-		panelViewEmployee.setBounds(338, 144, 1304, 792);
+		panelViewEmployee.setBounds(280, 110, 1065, 592);
 		contentPane.add(panelViewEmployee);
 		panelViewEmployee.setLayout(null);
 		
 		JLabel lblNewLabel_2 = new JLabel("Employee List");
-		lblNewLabel_2.setBounds(6, 8, 1322, 65);
+		lblNewLabel_2.setBounds(6, 8, 1053, 45);
 		lblNewLabel_2.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNewLabel_2.setFont(new Font("Comic Sans MS", Font.PLAIN, 21));
 		panelViewEmployee.add(lblNewLabel_2);
@@ -2830,7 +2830,7 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 		
 		JPanel panel_1 = new JPanel();
 		panel_1.setBorder(null);
-		panel_1.setBounds(39, 85, 1220, 670);
+		panel_1.setBounds(16, 58, 1032, 517);
 		panel_1.setLayout(new BorderLayout());
 		panelViewEmployee.add(panel_1);
 		
@@ -2898,7 +2898,7 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 		
 	    
 	    panelButtonViewEmp = new JPanel();
-		panelButtonViewEmp.setBounds(700, 948, 610, 65);
+		panelButtonViewEmp.setBounds(538, 706, 610, 65);
 		contentPane.add(panelButtonViewEmp);
 		panelButtonViewEmp.setLayout(null);
 		
@@ -2930,18 +2930,18 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 	{
 		panelSearchEmp = new JPanel();
 		panelSearchEmp.setBorder(new LineBorder(new Color(204, 0, 0), 3));
-		panelSearchEmp.setBounds(338, 144, 1304, 792);
+		panelSearchEmp.setBounds(280, 110, 1065, 592);
 		contentPane.add(panelSearchEmp);
 		panelSearchEmp.setLayout(null);
 		
 		JLabel lblNewLabel_2 = new JLabel("Employee Information");
 		lblNewLabel_2.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_2.setBounds(6, 8, 1322, 65);
+		lblNewLabel_2.setBounds(6, 6, 1053, 45);
 		lblNewLabel_2.setFont(new Font("Comic Sans MS", Font.PLAIN, 21));
 		panelSearchEmp.add(lblNewLabel_2);
 		
 		JPanel panel_1 = new JPanel();
-		panel_1.setBounds(21, 120, 1266, 180);
+		panel_1.setBounds(18, 101, 1027, 129);
 		panelSearchEmp.add(panel_1);
 		
 		panel_1.setBorder(BorderFactory.createTitledBorder(" Personal Information "));
@@ -2949,155 +2949,155 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 		
 		JLabel lblNewLabel_9 = new JLabel("First Name :");
 		lblNewLabel_9.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblNewLabel_9.setBounds(27, 48, 90, 23);
+		lblNewLabel_9.setBounds(16, 36, 90, 23);
 		panel_1.add(lblNewLabel_9);
 		
 		sfName = new JLabel();
-		sfName.setBounds(150, 44, 242, 35);
+		sfName.setBounds(139, 32, 191, 35);
 		panel_1.add(sfName);
 		
 		JLabel lblLastName = new JLabel("Last Name :");
 		lblLastName.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblLastName.setBounds(451, 48, 90, 23);
+		lblLastName.setBounds(360, 36, 90, 23);
 		panel_1.add(lblLastName);
 		
 		slName = new JLabel();
-		slName.setBounds(574, 44, 242, 35);
+		slName.setBounds(483, 32, 191, 35);
 		panel_1.add(slName);
 		
 		JLabel lblGener = new JLabel("Gender :");
 		lblGener.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblGener.setBounds(876, 48, 90, 23);
+		lblGener.setBounds(705, 36, 90, 23);
 		panel_1.add(lblGener);
 		
 		sgender = new JLabel();
-		sgender.setBounds(999, 44, 242, 35);
+		sgender.setBounds(828, 32, 191, 35);
 		panel_1.add(sgender);
 		
 		JLabel lblDateOfBirth = new JLabel("Date of Birth :");
 		lblDateOfBirth.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblDateOfBirth.setBounds(27, 115, 111, 23);
+		lblDateOfBirth.setBounds(16, 83, 111, 23);
 		panel_1.add(lblDateOfBirth);
 		
 		sdob = new JLabel();
-		sdob.setBounds(150, 111, 242, 35);
+		sdob.setBounds(139, 79, 191, 35);
 		panel_1.add(sdob);
 		
 		JLabel lblSalary = new JLabel("Salary :");
 		lblSalary.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblSalary.setBounds(451, 115, 90, 23);
+		lblSalary.setBounds(360, 83, 90, 23);
 		panel_1.add(lblSalary);
 		
 		slSalary = new JLabel();
-		slSalary.setBounds(574, 111, 242, 35);
+		slSalary.setBounds(483, 79, 191, 35);
 		panel_1.add(slSalary);
 		
 		JLabel lblEmployeeId_3 = new JLabel("Employee ID : ");
 		lblEmployeeId_3.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblEmployeeId_3.setBounds(876, 115, 111, 23);
+		lblEmployeeId_3.setBounds(705, 83, 111, 23);
 		panel_1.add(lblEmployeeId_3);
 		
 		sEmployeeID = new JLabel();
-		sEmployeeID.setBounds(999, 111, 242, 35);
+		sEmployeeID.setBounds(828, 79, 191, 35);
 		panel_1.add(sEmployeeID);
 		
 		JPanel panel_2 = new JPanel();
 		panel_2.setLayout(null);
 		panel_2.setBorder(BorderFactory.createTitledBorder(" Address Information "));
-		panel_2.setBounds(21, 330, 1266, 180);
+		panel_2.setBounds(18, 242, 1027, 129);
 		panelSearchEmp.add(panel_2);
 		
 		JLabel lblStreet = new JLabel("Street :");
 		lblStreet.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblStreet.setBounds(27, 48, 90, 23);
+		lblStreet.setBounds(16, 36, 90, 23);
 		panel_2.add(lblStreet);
 		
 		sstreet = new JLabel();
-		sstreet.setBounds(150, 44, 242, 35);
+		sstreet.setBounds(139, 32, 191, 35);
 		panel_2.add(sstreet);
 		
 		JLabel lblDistrict = new JLabel("District : ");
 		lblDistrict.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblDistrict.setBounds(451, 48, 90, 23);
+		lblDistrict.setBounds(358, 40, 90, 23);
 		panel_2.add(lblDistrict);
 		
 		sdistrict = new JLabel();
-		sdistrict.setBounds(574, 44, 242, 35);
+		sdistrict.setBounds(481, 36, 191, 35);
 		panel_2.add(sdistrict);
 		
 		JLabel lblCommune = new JLabel("Commune : ");
 		lblCommune.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblCommune.setBounds(876, 48, 90, 23);
+		lblCommune.setBounds(705, 36, 90, 23);
 		panel_2.add(lblCommune);
 		
 		scommune = new JLabel();
-		scommune.setBounds(999, 44, 242, 35);
+		scommune.setBounds(828, 32, 191, 35);
 		panel_2.add(scommune);
 		
 		JLabel lblCityProvince = new JLabel("City / Province : ");
 		lblCityProvince.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblCityProvince.setBounds(27, 115, 123, 23);
+		lblCityProvince.setBounds(16, 83, 123, 23);
 		panel_2.add(lblCityProvince);
 		
 		scity = new JLabel();
-		scity.setBounds(150, 111, 242, 35);
+		scity.setBounds(139, 79, 191, 35);
 		panel_2.add(scity);
 		
 		JLabel lblCountry = new JLabel("Country : ");
 		lblCountry.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblCountry.setBounds(451, 115, 90, 23);
+		lblCountry.setBounds(358, 87, 90, 23);
 		panel_2.add(lblCountry);
 		
 		scountry = new JLabel();
-		scountry.setBounds(574, 111, 242, 35);
+		scountry.setBounds(481, 83, 191, 35);
 		panel_2.add(scountry);
 		
 		JPanel panel_3 = new JPanel();
 		panel_3.setLayout(null);
 		panel_3.setBorder(BorderFactory.createTitledBorder(" Contact Information "));
-		panel_3.setBounds(21, 539, 1266, 106);
+		panel_3.setBounds(18, 383, 1027, 92);
 		panelSearchEmp.add(panel_3);
 		
 		JLabel lblMobile = new JLabel("Mobile : ");
 		lblMobile.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblMobile.setBounds(27, 48, 90, 23);
+		lblMobile.setBounds(16, 40, 90, 23);
 		panel_3.add(lblMobile);
 		
 		smobile = new JLabel();
-		smobile.setBounds(150, 44, 242, 35);
+		smobile.setBounds(139, 36, 191, 35);
 		panel_3.add(smobile);
 		
 		JLabel lblEmail = new JLabel("Email : ");
 		lblEmail.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblEmail.setBounds(451, 48, 90, 23);
+		lblEmail.setBounds(360, 40, 90, 23);
 		panel_3.add(lblEmail);
 		
 		semail = new JLabel();
-		semail.setBounds(574, 44, 242, 35);
+		semail.setBounds(483, 36, 191, 35);
 		panel_3.add(semail);
 		
 		JPanel panel_4 = new JPanel();
 		panel_4.setLayout(null);
 		panel_4.setBorder(BorderFactory.createTitledBorder(" Official Information "));
-		panel_4.setBounds(21, 672, 1266, 106);
+		panel_4.setBounds(18, 487, 1027, 92);
 		panelSearchEmp.add(panel_4);
 		
 		JLabel lblUsername = new JLabel("Username : ");
 		lblUsername.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblUsername.setBounds(27, 48, 90, 23);
+		lblUsername.setBounds(16, 40, 90, 23);
 		panel_4.add(lblUsername);
 		
 		susername = new JLabel();
-		susername.setBounds(150, 44, 242, 35);
+		susername.setBounds(139, 36, 191, 35);
 		panel_4.add(susername);
 		
 		JLabel lblPassword = new JLabel("Password : ");
 		lblPassword.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblPassword.setBounds(451, 48, 90, 23);
+		lblPassword.setBounds(360, 40, 90, 23);
 		panel_4.add(lblPassword);
 		
 		spassword = new JLabel();
-		spassword.setBounds(574, 44, 242, 35);
+		spassword.setBounds(483, 36, 191, 35);
 		panel_4.add(spassword);
 		
 		((javax.swing.border.TitledBorder) panel_1.getBorder()).
@@ -3121,7 +3121,7 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 		panel_4.repaint();
 	
 		panelButtonSearchEmp = new JPanel();
-		panelButtonSearchEmp.setBounds(700, 948, 610, 65);
+		panelButtonSearchEmp.setBounds(538, 706, 610, 65);
 		contentPane.add(panelButtonSearchEmp);
 		panelButtonSearchEmp.setLayout(null);
 		
@@ -3140,16 +3140,16 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 		
 		JLabel lblSearch_2 = new JLabel("Search by Username : ");
 		lblSearch_2.setFont(new Font("Arial Unicode MS", Font.PLAIN, 18));
-		lblSearch_2.setBounds(200, 76, 185, 23);
+		lblSearch_2.setBounds(79, 57, 185, 23);
 		panelSearchEmp.add(lblSearch_2);
 		
 		sESearch = new JTextField();
-		sESearch.setBounds(408, 72, 551, 36);
+		sESearch.setBounds(287, 53, 551, 36);
 		panelSearchEmp.add(sESearch);
 		sESearch.setColumns(10);
 		
 		btnSESearch = new JButton("Search");
-		btnSESearch.setBounds(992, 72, 117, 36);
+		btnSESearch.setBounds(871, 53, 117, 36);
 		panelSearchEmp.add(btnSESearch);
 		
 		/*JButton btnAdd = new JButton("   Add Employee");
@@ -3165,18 +3165,18 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 	{
 		panelUpdateEmp = new JPanel();
 		panelUpdateEmp.setBorder(new LineBorder(new Color(204, 0, 0), 3));
-		panelUpdateEmp.setBounds(338, 144, 1304, 792);
+		panelUpdateEmp.setBounds(280, 110, 1065, 592);
 		contentPane.add(panelUpdateEmp);
 		panelUpdateEmp.setLayout(null);
 		
 		JLabel lblNewLabel_2 = new JLabel("Employee Information");
 		lblNewLabel_2.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_2.setBounds(6, 8, 1322, 65);
+		lblNewLabel_2.setBounds(6, 6, 1053, 45);
 		lblNewLabel_2.setFont(new Font("Comic Sans MS", Font.PLAIN, 21));
 		panelUpdateEmp.add(lblNewLabel_2);
 		
 		JPanel panel_1 = new JPanel();
-		panel_1.setBounds(19, 120, 1266, 180);
+		panel_1.setBounds(18, 90, 1027, 136);
 		panelUpdateEmp.add(panel_1);
 		
 		panel_1.setBorder(BorderFactory.createTitledBorder(" Personal Information "));
@@ -3184,31 +3184,31 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 		
 		JLabel lblNewLabel_9 = new JLabel("First Name :");
 		lblNewLabel_9.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblNewLabel_9.setBounds(27, 48, 90, 23);
+		lblNewLabel_9.setBounds(16, 35, 90, 23);
 		panel_1.add(lblNewLabel_9);
 		
 		ufName = new JTextField();
-		ufName.setBounds(150, 44, 242, 35);
+		ufName.setBounds(139, 31, 191, 35);
 		panel_1.add(ufName);
 		ufName.setColumns(10);
 		
 		JLabel lblLastName = new JLabel("Last Name :");
 		lblLastName.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblLastName.setBounds(451, 48, 90, 23);
+		lblLastName.setBounds(360, 35, 90, 23);
 		panel_1.add(lblLastName);
 		
 		ulName = new JTextField();
 		ulName.setColumns(10);
-		ulName.setBounds(574, 44, 242, 35);
+		ulName.setBounds(483, 31, 191, 35);
 		panel_1.add(ulName);
 		
 		JLabel lblGener = new JLabel("Gender :");
 		lblGener.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblGener.setBounds(876, 48, 90, 23);
+		lblGener.setBounds(705, 35, 90, 23);
 		panel_1.add(lblGener);
 		
 		ugender = new JComboBox();
-		ugender.setBounds(999, 44, 242, 35);
+		ugender.setBounds(828, 31, 191, 35);
 		panel_1.add(ugender);
 		
 		ugender.addItem("- - - Choose - - -");
@@ -3217,141 +3217,141 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 		
 		JLabel lblDateOfBirth = new JLabel("Date of Birth :");
 		lblDateOfBirth.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblDateOfBirth.setBounds(27, 115, 111, 23);
+		lblDateOfBirth.setBounds(16, 82, 111, 23);
 		panel_1.add(lblDateOfBirth);
 				
 		JLabel lblSalary = new JLabel("Salary :");
 		lblSalary.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblSalary.setBounds(451, 115, 90, 23);
+		lblSalary.setBounds(360, 82, 90, 23);
 		panel_1.add(lblSalary);
 		
 		ulSalary = new JTextField();
 		ulSalary.setColumns(10);
-		ulSalary.setBounds(574, 111, 242, 35);
+		ulSalary.setBounds(483, 78, 191, 35);
 		panel_1.add(ulSalary);
 		
 		JLabel lblEmployeeId_2 = new JLabel("Employee ID : ");
 		lblEmployeeId_2.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblEmployeeId_2.setBounds(876, 117, 111, 23);
+		lblEmployeeId_2.setBounds(705, 84, 111, 23);
 		panel_1.add(lblEmployeeId_2);
 		
 		uEmployeeID = new JTextField();
 		uEmployeeID.setColumns(10);
 		uEmployeeID.setEditable(false);
-		uEmployeeID.setBounds(999, 111, 242, 35);
+		uEmployeeID.setBounds(828, 78, 191, 35);
 		panel_1.add(uEmployeeID);
 		
 		udob = new JDateChooser();
-		udob.setBounds(150, 111, 242, 35);
+		udob.setBounds(139, 78, 191, 35);
 		panel_1.add(udob);
 		
 		JPanel panel_2 = new JPanel();
 		panel_2.setLayout(null);
 		panel_2.setBorder(BorderFactory.createTitledBorder(" Address Information "));
-		panel_2.setBounds(19, 328, 1266, 180);
+		panel_2.setBounds(18, 237, 1027, 136);
 		panelUpdateEmp.add(panel_2);
 		
 		JLabel lblStreet = new JLabel("Street :");
 		lblStreet.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblStreet.setBounds(27, 48, 90, 23);
+		lblStreet.setBounds(16, 35, 90, 23);
 		panel_2.add(lblStreet);
 		
 		ustreet = new JTextField();
 		ustreet.setColumns(10);
-		ustreet.setBounds(150, 44, 242, 35);
+		ustreet.setBounds(139, 32, 191, 35);
 		panel_2.add(ustreet);
 		
 		JLabel lblDistrict = new JLabel("District : ");
 		lblDistrict.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblDistrict.setBounds(451, 48, 90, 23);
+		lblDistrict.setBounds(360, 39, 90, 23);
 		panel_2.add(lblDistrict);
 		
 		udistrict = new JTextField();
 		udistrict.setColumns(10);
-		udistrict.setBounds(574, 44, 242, 35);
+		udistrict.setBounds(483, 35, 191, 35);
 		panel_2.add(udistrict);
 		
 		JLabel lblCommune = new JLabel("Commune : ");
 		lblCommune.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblCommune.setBounds(876, 48, 90, 23);
+		lblCommune.setBounds(705, 39, 90, 23);
 		panel_2.add(lblCommune);
 		
 		ucommune = new JTextField();
 		ucommune.setColumns(10);
-		ucommune.setBounds(999, 44, 242, 35);
+		ucommune.setBounds(828, 35, 191, 35);
 		panel_2.add(ucommune);
 		
 		JLabel lblCityProvince = new JLabel("City / Province : ");
 		lblCityProvince.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblCityProvince.setBounds(27, 115, 123, 23);
+		lblCityProvince.setBounds(16, 83, 123, 23);
 		panel_2.add(lblCityProvince);
 		
 		ucity = new JTextField();
 		ucity.setColumns(10);
-		ucity.setBounds(150, 111, 242, 35);
+		ucity.setBounds(139, 79, 191, 35);
 		panel_2.add(ucity);
 		
 		JLabel lblCountry = new JLabel("Country : ");
 		lblCountry.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblCountry.setBounds(451, 115, 90, 23);
+		lblCountry.setBounds(360, 86, 90, 23);
 		panel_2.add(lblCountry);
 		
 		ucountry = new JTextField();
 		ucountry.setColumns(10);
-		ucountry.setBounds(574, 111, 242, 35);
+		ucountry.setBounds(483, 82, 191, 35);
 		panel_2.add(ucountry);
 		
 		JPanel panel_3 = new JPanel();
 		panel_3.setLayout(null);
 		panel_3.setBorder(BorderFactory.createTitledBorder(" Contact Information "));
-		panel_3.setBounds(19, 535, 1266, 106);
+		panel_3.setBounds(18, 385, 1027, 92);
 		panelUpdateEmp.add(panel_3);
 		
 		JLabel lblMobile = new JLabel("Mobile : ");
 		lblMobile.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblMobile.setBounds(27, 48, 90, 23);
+		lblMobile.setBounds(18, 40, 90, 23);
 		panel_3.add(lblMobile);
 		
 		umobile = new JTextField();
 		umobile.setColumns(10);
-		umobile.setBounds(150, 44, 242, 35);
+		umobile.setBounds(141, 36, 191, 35);
 		panel_3.add(umobile);
 		
 		JLabel lblEmail = new JLabel("Email : ");
 		lblEmail.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblEmail.setBounds(451, 48, 90, 23);
+		lblEmail.setBounds(360, 40, 90, 23);
 		panel_3.add(lblEmail);
 		
 		uemail = new JTextField();
 		uemail.setColumns(10);
-		uemail.setBounds(574, 44, 242, 35);
+		uemail.setBounds(483, 36, 191, 35);
 		panel_3.add(uemail);
 		
 		JPanel panel_4 = new JPanel();
 		panel_4.setLayout(null);
 		panel_4.setBorder(BorderFactory.createTitledBorder(" Official Information "));
-		panel_4.setBounds(19, 668, 1266, 106);
+		panel_4.setBounds(18, 489, 1027, 92);
 		panelUpdateEmp.add(panel_4);
 		
 		JLabel lblUsername = new JLabel("Username : ");
 		lblUsername.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblUsername.setBounds(27, 48, 90, 23);
+		lblUsername.setBounds(18, 40, 90, 23);
 		panel_4.add(lblUsername);
 		
 		uusername = new JTextField();
 		uusername.setColumns(10);
 		username.setEditable(false);
-		uusername.setBounds(150, 44, 242, 35);
+		uusername.setBounds(141, 36, 191, 35);
 		panel_4.add(uusername);
 		
 		JLabel lblPassword = new JLabel("Password : ");
 		lblPassword.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblPassword.setBounds(451, 48, 90, 23);
+		lblPassword.setBounds(360, 40, 90, 23);
 		panel_4.add(lblPassword);
 		
 		upassword = new JTextField();
 		upassword.setColumns(10);
-		upassword.setBounds(574, 44, 242, 35);
+		upassword.setBounds(483, 36, 191, 35);
 		panel_4.add(upassword);
 		
 		((javax.swing.border.TitledBorder) panel_1.getBorder()).
@@ -3375,7 +3375,7 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 		panel_4.repaint();
 	
 		panelButtonUpdateEmp = new JPanel();
-		panelButtonUpdateEmp.setBounds(700, 948, 610, 65);
+		panelButtonUpdateEmp.setBounds(538, 706, 610, 65);
 		contentPane.add(panelButtonUpdateEmp);
 		panelButtonUpdateEmp.setLayout(null);
 		
@@ -3400,16 +3400,16 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 		
 		JLabel lblSearch_2 = new JLabel("Search by Username : ");
 		lblSearch_2.setFont(new Font("Arial Unicode MS", Font.PLAIN, 18));
-		lblSearch_2.setBounds(200, 76,185 , 23);
+		lblSearch_2.setBounds(78, 55,185 , 23);
 		panelUpdateEmp.add(lblSearch_2);
 		
 		uESearch = new JTextField();
-		uESearch.setBounds(408, 72, 551, 36);
+		uESearch.setBounds(286, 51, 551, 36);
 		panelUpdateEmp.add(uESearch);
 		uESearch.setColumns(10);
 		
 		btnUESearch = new JButton("Search");
-		btnUESearch.setBounds(992, 72, 117, 36);
+		btnUESearch.setBounds(870, 51, 117, 36);
 		panelUpdateEmp.add(btnUESearch);
 		
 		btnUEClear.addActionListener(this);
@@ -3457,18 +3457,18 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 	{
 		panelDeleteEmp = new JPanel();
 		panelDeleteEmp.setBorder(new LineBorder(new Color(204, 0, 0), 3));
-		panelDeleteEmp.setBounds(338, 144, 1304, 792);
+		panelDeleteEmp.setBounds(280, 110, 1065, 592);
 		contentPane.add(panelDeleteEmp);
 		panelDeleteEmp.setLayout(null);
 		
 		JLabel lblNewLabel_2 = new JLabel("Employee Information");
 		lblNewLabel_2.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_2.setBounds(6, 8, 1322, 65);
+		lblNewLabel_2.setBounds(6, 6, 1053, 45);
 		lblNewLabel_2.setFont(new Font("Comic Sans MS", Font.PLAIN, 21));
 		panelDeleteEmp.add(lblNewLabel_2);
 		
 		JPanel panel_1 = new JPanel();
-		panel_1.setBounds(21, 120, 1266, 180);
+		panel_1.setBounds(16, 100, 1027, 128);
 		panelDeleteEmp.add(panel_1);
 		
 		panel_1.setBorder(BorderFactory.createTitledBorder(" Personal Information "));
@@ -3476,155 +3476,155 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 		
 		JLabel lblNewLabel_9 = new JLabel("First Name :");
 		lblNewLabel_9.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblNewLabel_9.setBounds(27, 48, 90, 23);
+		lblNewLabel_9.setBounds(16, 36, 90, 23);
 		panel_1.add(lblNewLabel_9);
 		
 		dfName = new JLabel();
-		dfName.setBounds(150, 44, 242, 35);
+		dfName.setBounds(139, 32, 191, 35);
 		panel_1.add(dfName);
 		
 		JLabel lblLastName = new JLabel("Last Name :");
 		lblLastName.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblLastName.setBounds(451, 48, 90, 23);
+		lblLastName.setBounds(360, 36, 90, 23);
 		panel_1.add(lblLastName);
 		
 		dlName = new JLabel();
-		dlName.setBounds(574, 44, 242, 35);
+		dlName.setBounds(483, 32, 191, 35);
 		panel_1.add(dlName);
 		
 		JLabel lblGener = new JLabel("Gender :");
 		lblGener.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblGener.setBounds(876, 48, 90, 23);
+		lblGener.setBounds(705, 36, 90, 23);
 		panel_1.add(lblGener);
 		
 		dgender = new JLabel();
-		dgender.setBounds(999, 44, 242, 35);
+		dgender.setBounds(828, 32, 191, 35);
 		panel_1.add(dgender);
 		
 		JLabel lblDateOfBirth = new JLabel("Date of Birth :");
 		lblDateOfBirth.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblDateOfBirth.setBounds(27, 115, 111, 23);
+		lblDateOfBirth.setBounds(16, 83, 111, 23);
 		panel_1.add(lblDateOfBirth);
 		
 		ddob = new JLabel();
-		ddob.setBounds(150, 111, 242, 35);
+		ddob.setBounds(139, 79, 191, 35);
 		panel_1.add(ddob);
 		
 		JLabel lblSalary = new JLabel("Salary :");
 		lblSalary.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblSalary.setBounds(451, 115, 90, 23);
+		lblSalary.setBounds(360, 83, 90, 23);
 		panel_1.add(lblSalary);
 		
 		dlSalary = new JLabel();
-		dlSalary.setBounds(574, 111, 242, 35);
+		dlSalary.setBounds(483, 79, 191, 35);
 		panel_1.add(dlSalary);
 		
 		JLabel lblEmployeeId_1 = new JLabel("Employee ID : ");
 		lblEmployeeId_1.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblEmployeeId_1.setBounds(876, 117, 111, 23);
+		lblEmployeeId_1.setBounds(705, 85, 111, 23);
 		panel_1.add(lblEmployeeId_1);
 		
 		dEmployeeID = new JLabel();
-		dEmployeeID.setBounds(999, 111, 242, 35);
+		dEmployeeID.setBounds(828, 79, 191, 35);
 		panel_1.add(dEmployeeID);
 		
 		JPanel panel_2 = new JPanel();
 		panel_2.setLayout(null);
 		panel_2.setBorder(BorderFactory.createTitledBorder(" Address Information "));
-		panel_2.setBounds(21, 330, 1266, 180);
+		panel_2.setBounds(16, 240, 1027, 128);
 		panelDeleteEmp.add(panel_2);
 		
 		JLabel lblStreet = new JLabel("Street :");
 		lblStreet.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblStreet.setBounds(27, 48, 90, 23);
+		lblStreet.setBounds(16, 36, 90, 23);
 		panel_2.add(lblStreet);
 		
 		dstreet = new JLabel();
-		dstreet.setBounds(150, 44, 242, 35);
+		dstreet.setBounds(139, 32, 191, 35);
 		panel_2.add(dstreet);
 		
 		JLabel lblDistrict = new JLabel("District : ");
 		lblDistrict.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblDistrict.setBounds(451, 48, 90, 23);
+		lblDistrict.setBounds(360, 40, 90, 23);
 		panel_2.add(lblDistrict);
 		
 		ddistrict = new JLabel();
-		ddistrict.setBounds(574, 44, 242, 35);
+		ddistrict.setBounds(483, 36, 191, 35);
 		panel_2.add(ddistrict);
 		
 		JLabel lblCommune = new JLabel("Commune : ");
 		lblCommune.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblCommune.setBounds(876, 48, 90, 23);
+		lblCommune.setBounds(705, 40, 90, 23);
 		panel_2.add(lblCommune);
 		
 		dcommune = new JLabel();
-		dcommune.setBounds(999, 44, 242, 35);
+		dcommune.setBounds(828, 36, 191, 35);
 		panel_2.add(dcommune);
 		
 		JLabel lblCityProvince = new JLabel("City / Province : ");
 		lblCityProvince.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblCityProvince.setBounds(27, 115, 123, 23);
+		lblCityProvince.setBounds(16, 83, 123, 23);
 		panel_2.add(lblCityProvince);
 		
 		dcity = new JLabel();
-		dcity.setBounds(150, 111, 242, 35);
+		dcity.setBounds(139, 79, 191, 35);
 		panel_2.add(dcity);
 		
 		JLabel lblCountry = new JLabel("Country : ");
 		lblCountry.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblCountry.setBounds(451, 115, 90, 23);
+		lblCountry.setBounds(360, 83, 90, 23);
 		panel_2.add(lblCountry);
 		
 		dcountry = new JLabel();
-		dcountry.setBounds(574, 111, 242, 35);
+		dcountry.setBounds(483, 79, 191, 35);
 		panel_2.add(dcountry);
 		
 		JPanel panel_3 = new JPanel();
 		panel_3.setLayout(null);
 		panel_3.setBorder(BorderFactory.createTitledBorder(" Contact Information "));
-		panel_3.setBounds(21, 539, 1266, 106);
+		panel_3.setBounds(16, 380, 1027, 92);
 		panelDeleteEmp.add(panel_3);
 		
 		JLabel lblMobile = new JLabel("Mobile : ");
 		lblMobile.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblMobile.setBounds(27, 48, 90, 23);
+		lblMobile.setBounds(16, 40, 90, 23);
 		panel_3.add(lblMobile);
 		
 		dmobile = new JLabel();
-		dmobile.setBounds(150, 44, 242, 35);
+		dmobile.setBounds(139, 36, 191, 35);
 		panel_3.add(dmobile);
 		
 		JLabel lblEmail = new JLabel("Email : ");
 		lblEmail.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblEmail.setBounds(451, 48, 90, 23);
+		lblEmail.setBounds(360, 44, 90, 23);
 		panel_3.add(lblEmail);
 		
 		demail = new JLabel();
-		demail.setBounds(574, 44, 242, 35);
+		demail.setBounds(483, 40, 191, 35);
 		panel_3.add(demail);
 		
 		JPanel panel_4 = new JPanel();
 		panel_4.setLayout(null);
 		panel_4.setBorder(BorderFactory.createTitledBorder(" Official Information "));
-		panel_4.setBounds(21, 672, 1266, 106);
+		panel_4.setBounds(16, 484, 1027, 92);
 		panelDeleteEmp.add(panel_4);
 		
 		JLabel lblUsername = new JLabel("Username : ");
 		lblUsername.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblUsername.setBounds(27, 48, 90, 23);
+		lblUsername.setBounds(16, 40, 90, 23);
 		panel_4.add(lblUsername);
 		
 		dusername = new JLabel();
-		dusername.setBounds(150, 44, 242, 35);
+		dusername.setBounds(139, 36, 191, 35);
 		panel_4.add(dusername);
 		
 		JLabel lblPassword = new JLabel("Password : ");
 		lblPassword.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblPassword.setBounds(451, 48, 90, 23);
+		lblPassword.setBounds(360, 44, 90, 23);
 		panel_4.add(lblPassword);
 		
 		dpassword = new JLabel();
-		dpassword.setBounds(574, 44, 242, 35);
+		dpassword.setBounds(483, 40, 191, 35);
 		panel_4.add(dpassword);
 		
 		((javax.swing.border.TitledBorder) panel_1.getBorder()).
@@ -3648,7 +3648,7 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 		panel_4.repaint();
 	
 		panelButtonDeleteEmp = new JPanel();
-		panelButtonDeleteEmp.setBounds(700, 948, 610, 65);
+		panelButtonDeleteEmp.setBounds(538, 706, 610, 65);
 		contentPane.add(panelButtonDeleteEmp);
 		panelButtonDeleteEmp.setLayout(null);
 		
@@ -3674,16 +3674,16 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 
 		JLabel lblSearch_2 = new JLabel("Search by Username : ");
 		lblSearch_2.setFont(new Font("Arial Unicode MS", Font.PLAIN, 18));
-		lblSearch_2.setBounds(200, 76, 185, 23);
+		lblSearch_2.setBounds(93, 56, 185, 23);
 		panelDeleteEmp.add(lblSearch_2);
 		
 		dESearch = new JTextField();
-		dESearch.setBounds(408, 72, 551, 36);
+		dESearch.setBounds(301, 52, 551, 36);
 		panelDeleteEmp.add(dESearch);
 		dESearch.setColumns(10);
 		
 		btnDESearch = new JButton("Search");
-		btnDESearch.setBounds(992, 72, 117, 36);
+		btnDESearch.setBounds(885, 52, 117, 36);
 		panelDeleteEmp.add(btnDESearch);
 		
 		/*JButton btnAdd = new JButton("   Add Employee");
@@ -3702,18 +3702,18 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 	{
 		panelAddMembership = new JPanel();
 		panelAddMembership.setBorder(new LineBorder(new Color(204, 0, 0), 3));
-		panelAddMembership.setBounds(338, 144, 1304, 792);
+		panelAddMembership.setBounds(280, 110, 1065, 592);
 		contentPane.add(panelAddMembership);
 		panelAddMembership.setLayout(null);
 		
 		JLabel lblNewLabel_2 = new JLabel("Membership Information");
 		lblNewLabel_2.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_2.setBounds(6, 8, 1322, 65);
+		lblNewLabel_2.setBounds(6, 8, 1053, 65);
 		lblNewLabel_2.setFont(new Font("Comic Sans MS", Font.PLAIN, 21));
 		panelAddMembership.add(lblNewLabel_2);
 		
 		JPanel panel_1 = new JPanel();
-		panel_1.setBounds(21, 75, 1266, 180);
+		panel_1.setBounds(16, 75, 1027, 180);
 		panelAddMembership.add(panel_1);
 		
 		panel_1.setBorder(BorderFactory.createTitledBorder(" Personal Information "));
@@ -3721,31 +3721,31 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 		
 		JLabel lblNewLabel_9 = new JLabel("First Name :");
 		lblNewLabel_9.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblNewLabel_9.setBounds(27, 48, 90, 23);
+		lblNewLabel_9.setBounds(16, 48, 90, 23);
 		panel_1.add(lblNewLabel_9);
 		
 		mFName = new JTextField();
-		mFName.setBounds(150, 44, 242, 35);
+		mFName.setBounds(139, 44, 191, 35);
 		panel_1.add(mFName);
 		mFName.setColumns(10);
 		
 		JLabel lblLastName = new JLabel("Last Name :");
 		lblLastName.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblLastName.setBounds(451, 48, 90, 23);
+		lblLastName.setBounds(360, 48, 90, 23);
 		panel_1.add(lblLastName);
 		
 		mLName = new JTextField();
 		mLName.setColumns(10);
-		mLName.setBounds(574, 44, 242, 35);
+		mLName.setBounds(483, 44, 191, 35);
 		panel_1.add(mLName);
 		
 		JLabel lblGener = new JLabel("Gender :");
 		lblGener.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblGener.setBounds(876, 48, 90, 23);
+		lblGener.setBounds(704, 52, 90, 23);
 		panel_1.add(lblGener);
 		
 		mgender = new JComboBox();
-		mgender.setBounds(999, 44, 242, 35);
+		mgender.setBounds(827, 48, 191, 35);
 		panel_1.add(mgender);
 		
 		mgender.addItem("- - - Choose - - -");
@@ -3754,46 +3754,46 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 		
 		JLabel lblDateOfBirth = new JLabel("Date of Birth :");
 		lblDateOfBirth.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblDateOfBirth.setBounds(27, 115, 111, 23);
+		lblDateOfBirth.setBounds(16, 115, 111, 23);
 		panel_1.add(lblDateOfBirth);
 		
 		mdob = new JDateChooser();
-		mdob.setBounds(150, 111, 242, 35);
+		mdob.setBounds(139, 111, 191, 35);
 		panel_1.add(mdob);
 		
 		JPanel panel_2 = new JPanel();
 		panel_2.setLayout(null);
 		panel_2.setBorder(BorderFactory.createTitledBorder(" Card Information "));
-		panel_2.setBounds(21, 291, 1266, 106);
+		panel_2.setBounds(21, 291, 1022, 106);
 		panelAddMembership.add(panel_2);
 		
 		JLabel lblStreet = new JLabel("Register Date :");
 		lblStreet.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblStreet.setBounds(27, 48, 111, 23);
+		lblStreet.setBounds(16, 50, 111, 23);
 		panel_2.add(lblStreet);
 		
 		JLabel lblDistrict = new JLabel("Card Level : ");
 		lblDistrict.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblDistrict.setBounds(451, 48, 90, 23);
+		lblDistrict.setBounds(360, 51, 90, 23);
 		panel_2.add(lblDistrict);
 		
 		JLabel lblCommune = new JLabel("Discount (%) : ");
 		lblCommune.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblCommune.setBounds(876, 48, 111, 23);
+		lblCommune.setBounds(705, 48, 111, 23);
 		panel_2.add(lblCommune);
 		
 		mdiscount = new JTextField();
 		mdiscount.setColumns(10);
-		mdiscount.setBounds(999, 44, 242, 35);
+		mdiscount.setBounds(828, 44, 191, 35);
 		panel_2.add(mdiscount);
 		mdiscount.setEditable(false);
 		
 		mrDate = new JDateChooser();
-		mrDate.setBounds(150, 42, 242, 35);
+		mrDate.setBounds(139, 44, 191, 35);
 		panel_2.add(mrDate);
 		
 		mCardLevel = new JComboBox();
-		mCardLevel.setBounds(574, 41, 242, 35);
+		mCardLevel.setBounds(483, 44, 191, 35);
 		panel_2.add(mCardLevel);
 		
 		mCardLevel.addItem("- - - Choose - - -");
@@ -3816,17 +3816,17 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 		JPanel panel_3 = new JPanel();
 		panel_3.setLayout(null);
 		panel_3.setBorder(BorderFactory.createTitledBorder(" Contact Information "));
-		panel_3.setBounds(21, 432, 1266, 106);
+		panel_3.setBounds(21, 432, 1022, 106);
 		panelAddMembership.add(panel_3);
 		
 		JLabel lblMobile = new JLabel("Mobile : ");
 		lblMobile.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblMobile.setBounds(27, 48, 90, 23);
+		lblMobile.setBounds(16, 48, 90, 23);
 		panel_3.add(lblMobile);
 		
 		mmobile = new JTextField();
 		mmobile.setColumns(10);
-		mmobile.setBounds(150, 44, 242, 35);
+		mmobile.setBounds(139, 44, 191, 35);
 		panel_3.add(mmobile);
 		
 		((javax.swing.border.TitledBorder) panel_1.getBorder()).
@@ -3845,7 +3845,7 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 		panel_3.repaint();
 	
 		panelButtonAddMembership = new JPanel();
-		panelButtonAddMembership.setBounds(700, 948, 610, 65);
+		panelButtonAddMembership.setBounds(538, 706, 610, 65);
 		contentPane.add(panelButtonAddMembership);
 		panelButtonAddMembership.setLayout(null);
 		
@@ -3877,12 +3877,12 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 	{
 		panelViewMembership = new JPanel();
 		panelViewMembership.setBorder(new LineBorder(new Color(204, 0, 0), 3));
-		panelViewMembership.setBounds(338, 144, 1304, 792);
+		panelViewMembership.setBounds(280, 110, 1065, 592);
 		contentPane.add(panelViewMembership);
 		panelViewMembership.setLayout(null);
 		
 		JLabel lblNewLabel_2 = new JLabel("Membership List");
-		lblNewLabel_2.setBounds(6, 8, 1322, 65);
+		lblNewLabel_2.setBounds(6, 8, 1053, 55);
 		lblNewLabel_2.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNewLabel_2.setFont(new Font("Comic Sans MS", Font.PLAIN, 21));
 		panelViewMembership.add(lblNewLabel_2);
@@ -3896,7 +3896,7 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 		
 		JPanel panel_1 = new JPanel();
 		panel_1.setBorder(null);
-		panel_1.setBounds(39, 85, 1220, 670);
+		panel_1.setBounds(17, 67, 1029, 507);
 		panel_1.setLayout(new BorderLayout());
 		panelViewMembership.add(panel_1);
 		
@@ -3962,7 +3962,7 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 			}
 		});
 		panelButtonViewMem = new JPanel();
-		panelButtonViewMem.setBounds(700, 948, 610, 65);
+		panelButtonViewMem.setBounds(538, 706, 610, 65);
 		contentPane.add(panelButtonViewMem);
 		panelButtonViewMem.setLayout(null);
 		
@@ -3994,18 +3994,18 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 	{
 		panelSearchMem = new JPanel();
 		panelSearchMem.setBorder(new LineBorder(new Color(204, 0, 0), 3));
-		panelSearchMem.setBounds(338, 144, 1304, 792);
+		panelSearchMem.setBounds(280, 110, 1065, 592);
 		contentPane.add(panelSearchMem);
 		panelSearchMem.setLayout(null);
 		
 		JLabel lblNewLabel_2 = new JLabel("Membership Information");
 		lblNewLabel_2.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_2.setBounds(6, 8, 1322, 65);
+		lblNewLabel_2.setBounds(6, 8, 1053, 45);
 		lblNewLabel_2.setFont(new Font("Comic Sans MS", Font.PLAIN, 21));
 		panelSearchMem.add(lblNewLabel_2);
 		
 		JPanel panel_1 = new JPanel();
-		panel_1.setBounds(20, 149, 1266, 180);
+		panel_1.setBounds(16, 105, 1027, 166);
 		panelSearchMem.add(panel_1);
 		
 		panel_1.setBorder(BorderFactory.createTitledBorder(" Personal Information "));
@@ -4013,85 +4013,85 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 		
 		JLabel lblNewLabel_9 = new JLabel("First Name :");
 		lblNewLabel_9.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblNewLabel_9.setBounds(27, 48, 90, 23);
+		lblNewLabel_9.setBounds(16, 49, 90, 23);
 		panel_1.add(lblNewLabel_9);
 		
 		mSfName= new JLabel();
-		mSfName.setBounds(150, 44, 242, 35);
+		mSfName.setBounds(139, 45, 191, 35);
 		panel_1.add(mSfName);
 		
 		JLabel lblLastName = new JLabel("Last Name :");
 		lblLastName.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblLastName.setBounds(451, 48, 90, 23);
+		lblLastName.setBounds(360, 49, 90, 23);
 		panel_1.add(lblLastName);
 		
 		mSlName = new JLabel();
-		mSlName.setBounds(574, 44, 242, 35);
+		mSlName.setBounds(483, 45, 191, 35);
 		panel_1.add(mSlName);
 		
 		JLabel lblGener = new JLabel("Gender :");
 		lblGener.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblGener.setBounds(876, 48, 90, 23);
+		lblGener.setBounds(705, 49, 90, 23);
 		panel_1.add(lblGener);
 		
 		mSgender = new JLabel();
-		mSgender.setBounds(999, 44, 242, 35);
+		mSgender.setBounds(828, 45, 191, 35);
 		panel_1.add(mSgender);
 		
 		JLabel lblDateOfBirth = new JLabel("Date of Birth :");
 		lblDateOfBirth.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblDateOfBirth.setBounds(27, 115, 111, 23);
+		lblDateOfBirth.setBounds(16, 116, 111, 23);
 		panel_1.add(lblDateOfBirth);
 		
 		mSdob = new JLabel();
-		mSdob.setBounds(150, 111, 242, 35);
+		mSdob.setBounds(139, 112, 191, 35);
 		panel_1.add(mSdob);
 		
 		JPanel panel_2 = new JPanel();
 		panel_2.setLayout(null);
 		panel_2.setBorder(BorderFactory.createTitledBorder(" Card Information "));
-		panel_2.setBounds(20, 365, 1266, 180);
+		panel_2.setBounds(16, 293, 1027, 166);
 		panelSearchMem.add(panel_2);
 		
 		JLabel lblStreet = new JLabel("Membership ID : ");
 		lblStreet.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblStreet.setBounds(27, 48, 120, 23);
+		lblStreet.setBounds(16, 51, 120, 23);
 		panel_2.add(lblStreet);
 		
 		JLabel lblDistrict = new JLabel("Card Level : ");
 		lblDistrict.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblDistrict.setBounds(451, 48, 90, 23);
+		lblDistrict.setBounds(360, 52, 90, 23);
 		panel_2.add(lblDistrict);
 		
 		JLabel lblCommune = new JLabel("Discount : ");
 		lblCommune.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblCommune.setBounds(876, 48, 90, 23);
+		lblCommune.setBounds(704, 49, 90, 23);
 		panel_2.add(lblCommune);
 		mSDiscount = new JLabel();
-		mSDiscount.setBounds(999, 44, 242, 35);
+		mSDiscount.setBounds(827, 45, 191, 35);
 		panel_2.add(mSDiscount);
 		
 		mSMemID = new JLabel();
-		mSMemID.setBounds(150, 42, 242, 35);
+		mSMemID.setBounds(139, 45, 191, 35);
 		panel_2.add(mSMemID);
 		
 		mSCLevel = new JLabel();
-		mSCLevel.setBounds(574, 41, 242, 35);
+		mSCLevel.setBounds(483, 45, 242, 35);
 		panel_2.add(mSCLevel);
 		
 		JLabel label = new JLabel("Register Date :");
 		label.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		label.setBounds(27, 114, 111, 23);
+		label.setBounds(16, 117, 111, 23);
 		panel_2.add(label);
 		
 		mSRDate = new JLabel();
-		mSRDate.setBounds(150, 108, 242, 35);
+		mSRDate.setBounds(139, 111, 191, 35);
 		panel_2.add(mSRDate);
 		
 		JPanel panel_3 = new JPanel();
 		panel_3.setLayout(null);
 		panel_3.setBorder(BorderFactory.createTitledBorder(" Contact Information "));
-		panel_3.setBounds(20, 581, 1266, 106);
+		panel_3.setBounds(16, 479, 1027, 100);
 		panelSearchMem.add(panel_3);
 		
 		JLabel lblMobile = new JLabel("Mobile : ");
@@ -4100,21 +4100,21 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 		panel_3.add(lblMobile);
 		
 		mSmobile = new JLabel();
-		mSmobile.setBounds(150, 44, 242, 35);
+		mSmobile.setBounds(150, 44, 191, 35);
 		panel_3.add(mSmobile);
 		
 		JLabel lblNewLabel_10 = new JLabel("Search by MemID : ");
 		lblNewLabel_10.setFont(new Font("Arial Unicode MS", Font.PLAIN, 18));
-		lblNewLabel_10.setBounds(200, 85, 185, 25);
+		lblNewLabel_10.setBounds(97, 60, 185, 25);
 		panelSearchMem.add(lblNewLabel_10);
 		
 		sMSearch = new JTextField();
-		sMSearch.setBounds(371, 85, 551, 35);
+		sMSearch.setBounds(268, 60, 551, 35);
 		panelSearchMem.add(sMSearch);
 		sMSearch.setColumns(10);
 		
 		btnSMemSearch = new JButton("Search");
-		btnSMemSearch.setBounds(983, 85, 117, 35);
+		btnSMemSearch.setBounds(880, 60, 117, 35);
 		panelSearchMem.add(btnSMemSearch);
 		
 		((javax.swing.border.TitledBorder) panel_1.getBorder()).
@@ -4133,7 +4133,7 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 		panel_3.repaint();
 	
 		panelButtonSearchMem = new JPanel();
-		panelButtonSearchMem.setBounds(700, 948, 610, 65);
+		panelButtonSearchMem.setBounds(538, 706, 610, 65);
 		contentPane.add(panelButtonSearchMem);
 		panelButtonSearchMem.setLayout(null);
 		
@@ -4165,18 +4165,18 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 	{
 		panelUpdateMem = new JPanel();
 		panelUpdateMem.setBorder(new LineBorder(new Color(204, 0, 0), 3));
-		panelUpdateMem.setBounds(338, 144, 1304, 792);
+		panelUpdateMem.setBounds(280, 110, 1065, 592);
 		contentPane.add(panelUpdateMem);
 		panelUpdateMem.setLayout(null);
 		
 		JLabel lblNewLabel_2 = new JLabel("Membership Information");
 		lblNewLabel_2.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_2.setBounds(6, 8, 1322, 65);
+		lblNewLabel_2.setBounds(6, 8, 1053, 42);
 		lblNewLabel_2.setFont(new Font("Comic Sans MS", Font.PLAIN, 21));
 		panelUpdateMem.add(lblNewLabel_2);
 		
 		JPanel panel_1 = new JPanel();
-		panel_1.setBounds(19, 150, 1266, 180);
+		panel_1.setBounds(16, 105, 1027, 156);
 		panelUpdateMem.add(panel_1);
 		
 		panel_1.setBorder(BorderFactory.createTitledBorder(" Personal Information "));
@@ -4184,31 +4184,31 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 		
 		JLabel lblNewLabel_9 = new JLabel("First Name :");
 		lblNewLabel_9.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblNewLabel_9.setBounds(27, 48, 90, 23);
+		lblNewLabel_9.setBounds(16, 37, 90, 23);
 		panel_1.add(lblNewLabel_9);
 		
 		uMfName = new JTextField();
-		uMfName.setBounds(150, 44, 242, 35);
+		uMfName.setBounds(139, 33, 191, 35);
 		panel_1.add(uMfName);
 		uMfName.setColumns(10);
 		
 		JLabel lblLastName = new JLabel("Last Name :");
 		lblLastName.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblLastName.setBounds(451, 48, 90, 23);
+		lblLastName.setBounds(360, 37, 90, 23);
 		panel_1.add(lblLastName);
 		
 		uMlName = new JTextField();
 		uMlName.setColumns(10);
-		uMlName.setBounds(574, 44, 242, 35);
+		uMlName.setBounds(483, 33, 191, 35);
 		panel_1.add(uMlName);
 		
 		JLabel lblGener = new JLabel("Gender :");
 		lblGener.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblGener.setBounds(876, 48, 90, 23);
+		lblGener.setBounds(705, 37, 90, 23);
 		panel_1.add(lblGener);
 		
 		uMgender = new JComboBox();
-		uMgender.setBounds(999, 44, 242, 35);
+		uMgender.setBounds(828, 33, 191, 35);
 		panel_1.add(uMgender);
 		
 		uMgender.addItem("- - - Choose - - -");
@@ -4217,42 +4217,42 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 		
 		JLabel lblDateOfBirth = new JLabel("Date of Birth :");
 		lblDateOfBirth.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblDateOfBirth.setBounds(27, 115, 111, 23);
+		lblDateOfBirth.setBounds(16, 104, 111, 23);
 		panel_1.add(lblDateOfBirth);
 		
 		uMdob = new JDateChooser();
-		uMdob.setBounds(150, 111, 242, 35);
+		uMdob.setBounds(139, 100, 191, 35);
 		panel_1.add(uMdob);
 		
 		JPanel panel_2 = new JPanel();
 		panel_2.setLayout(null);
 		panel_2.setBorder(BorderFactory.createTitledBorder(" Card Information "));
-		panel_2.setBounds(19, 366, 1266, 180);
+		panel_2.setBounds(16, 289, 1027, 156);
 		panelUpdateMem.add(panel_2);
 		
 		JLabel lblStreet = new JLabel("Membership ID : ");
 		lblStreet.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblStreet.setBounds(27, 48, 120, 23);
+		lblStreet.setBounds(16, 41, 120, 23);
 		panel_2.add(lblStreet);
 		
 		JLabel lblDistrict = new JLabel("Card Level : ");
 		lblDistrict.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblDistrict.setBounds(451, 48, 90, 23);
+		lblDistrict.setBounds(360, 40, 90, 23);
 		panel_2.add(lblDistrict);
 		
 		JLabel lblCommune = new JLabel("Discount (%) : ");
 		lblCommune.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblCommune.setBounds(876, 48, 111, 23);
+		lblCommune.setBounds(705, 37, 111, 23);
 		panel_2.add(lblCommune);
 		
 		uMDiscount = new JTextField();
 		uMDiscount.setColumns(10);
-		uMDiscount.setBounds(999, 44, 242, 35);
+		uMDiscount.setBounds(828, 33, 191, 35);
 		panel_2.add(uMDiscount);
 		uMDiscount.setEditable(false);
 		
 		uMCLevel = new JComboBox();
-		uMCLevel.setBounds(574, 41, 242, 35);
+		uMCLevel.setBounds(483, 33, 191, 35);
 		panel_2.add(uMCLevel);
 		
 		uMCLevel.addItemListener(new ItemListener() {
@@ -4275,15 +4275,15 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 		
 		JLabel label = new JLabel("Register Date :");
 		label.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		label.setBounds(27, 117, 111, 23);
+		label.setBounds(16, 110, 111, 23);
 		panel_2.add(label);
 		
 		uMrDate = new JDateChooser();
-		uMrDate.setBounds(150, 111, 242, 35);
+		uMrDate.setBounds(139, 104, 191, 35);
 		panel_2.add(uMrDate);
 		
 		uMMemID = new JTextField();
-		uMMemID.setBounds(150, 40, 242, 35);
+		uMMemID.setBounds(139, 33, 191, 35);
 		uMMemID.setEditable(false);
 		panel_2.add(uMMemID);
 		uMMemID.setColumns(10);
@@ -4291,31 +4291,31 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 		JPanel panel_3 = new JPanel();
 		panel_3.setLayout(null);
 		panel_3.setBorder(BorderFactory.createTitledBorder(" Contact Information "));
-		panel_3.setBounds(19, 582, 1266, 106);
+		panel_3.setBounds(16, 473, 1266, 98);
 		panelUpdateMem.add(panel_3);
 		
 		JLabel lblMobile = new JLabel("Mobile : ");
 		lblMobile.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblMobile.setBounds(27, 48, 90, 23);
+		lblMobile.setBounds(16, 43, 90, 23);
 		panel_3.add(lblMobile);
 		
 		uMmobile = new JTextField();
 		uMmobile.setColumns(10);
-		uMmobile.setBounds(150, 44, 242, 35);
+		uMmobile.setBounds(139, 39, 191, 35);
 		panel_3.add(uMmobile);
 		
 		JLabel lblNewLabel_10 = new JLabel("Search by MemID : ");
 		lblNewLabel_10.setFont(new Font("Arial Unicode MS", Font.PLAIN, 18));
-		lblNewLabel_10.setBounds(200, 85, 185, 25);
+		lblNewLabel_10.setBounds(97, 60, 185, 25);
 		panelUpdateMem.add(lblNewLabel_10);
 		
 		uMSearch = new JTextField();
-		uMSearch.setBounds(371, 85, 551, 35);
+		uMSearch.setBounds(268, 60, 551, 35);
 		panelUpdateMem.add(uMSearch);
 		uMSearch.setColumns(10);
 		
 		btnUMemSearch = new JButton("Search");
-		btnUMemSearch.setBounds(983, 85, 117, 35);
+		btnUMemSearch.setBounds(880, 60, 117, 35);
 		panelUpdateMem.add(btnUMemSearch);
 		
 		((javax.swing.border.TitledBorder) panel_1.getBorder()).
@@ -4334,7 +4334,7 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 		panel_3.repaint();
 	
 		panelButtonUpdateMem = new JPanel();
-		panelButtonUpdateMem.setBounds(700, 948, 610, 65);
+		panelButtonUpdateMem.setBounds(538, 706, 610, 65);
 		contentPane.add(panelButtonUpdateMem);
 		panelButtonUpdateMem.setLayout(null);
 		
@@ -4367,18 +4367,18 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 	{
 		panelDeleteMem = new JPanel();
 		panelDeleteMem.setBorder(new LineBorder(new Color(204, 0, 0), 3));
-		panelDeleteMem.setBounds(338, 144, 1304, 792);
+		panelDeleteMem.setBounds(280, 110, 1065, 592);
 		contentPane.add(panelDeleteMem);
 		panelDeleteMem.setLayout(null);
 		
 		JLabel lblNewLabel_2 = new JLabel("Membership Information");
 		lblNewLabel_2.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_2.setBounds(6, 8, 1322, 65);
+		lblNewLabel_2.setBounds(6, 8, 1053, 46);
 		lblNewLabel_2.setFont(new Font("Comic Sans MS", Font.PLAIN, 21));
 		panelDeleteMem.add(lblNewLabel_2);
 		
 		JPanel panel_1 = new JPanel();
-		panel_1.setBounds(20, 149, 1266, 180);
+		panel_1.setBounds(20, 105, 1027, 156);
 		panelDeleteMem.add(panel_1);
 		
 		panel_1.setBorder(BorderFactory.createTitledBorder(" Personal Information "));
@@ -4386,108 +4386,108 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 		
 		JLabel lblNewLabel_9 = new JLabel("First Name :");
 		lblNewLabel_9.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblNewLabel_9.setBounds(27, 48, 90, 23);
+		lblNewLabel_9.setBounds(16, 37, 90, 23);
 		panel_1.add(lblNewLabel_9);
 		
 		mDfName = new JLabel();
-		mDfName.setBounds(150, 44, 242, 35);
+		mDfName.setBounds(139, 33, 191, 35);
 		panel_1.add(mDfName);
 		
 		JLabel lblLastName = new JLabel("Last Name :");
 		lblLastName.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblLastName.setBounds(451, 48, 90, 23);
+		lblLastName.setBounds(360, 37, 90, 23);
 		panel_1.add(lblLastName);
 		
 		mDlName = new JLabel();
-		mDlName.setBounds(574, 44, 242, 35);
+		mDlName.setBounds(483, 33, 191, 35);
 		panel_1.add(mDlName);
 		
 		JLabel lblGener = new JLabel("Gender :");
 		lblGener.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblGener.setBounds(876, 48, 90, 23);
+		lblGener.setBounds(705, 37, 90, 23);
 		panel_1.add(lblGener);
 		
 		mDgender = new JLabel();
-		mDgender.setBounds(999, 44, 242, 35);
+		mDgender.setBounds(828, 33, 191, 35);
 		panel_1.add(mDgender);
 		
 		JLabel lblDateOfBirth = new JLabel("Date of Birth :");
 		lblDateOfBirth.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblDateOfBirth.setBounds(27, 115, 111, 23);
+		lblDateOfBirth.setBounds(16, 104, 111, 23);
 		panel_1.add(lblDateOfBirth);
 		
 		mDdob = new JLabel();
-		mDdob.setBounds(150, 111, 242, 35);
+		mDdob.setBounds(139, 100, 191, 35);
 		panel_1.add(mDdob);
 		
 		JPanel panel_2 = new JPanel();
 		panel_2.setLayout(null);
 		panel_2.setBorder(BorderFactory.createTitledBorder(" Card Information "));
-		panel_2.setBounds(20, 365, 1266, 180);
+		panel_2.setBounds(20, 286, 1027, 156);
 		panelDeleteMem.add(panel_2);
 		
 		JLabel lblStreet = new JLabel("Membership ID : ");
 		lblStreet.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblStreet.setBounds(27, 48, 120, 23);
+		lblStreet.setBounds(16, 39, 120, 23);
 		panel_2.add(lblStreet);
 		
 		JLabel lblDistrict = new JLabel("Card Level : ");
 		lblDistrict.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblDistrict.setBounds(451, 48, 90, 23);
+		lblDistrict.setBounds(360, 40, 90, 23);
 		panel_2.add(lblDistrict);
 		
 		JLabel lblCommune = new JLabel("Discount : ");
 		lblCommune.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblCommune.setBounds(876, 48, 90, 23);
+		lblCommune.setBounds(705, 37, 90, 23);
 		panel_2.add(lblCommune);
 		
 		mDDiscount = new JLabel();
-		mDDiscount.setBounds(999, 44, 242, 35);
+		mDDiscount.setBounds(828, 33, 191, 35);
 		panel_2.add(mDDiscount);
 		
 		mRDDate = new JLabel();
-		mRDDate.setBounds(150, 42, 242, 35);
+		mRDDate.setBounds(139, 33, 191, 35);
 		panel_2.add(mRDDate);
 		
 		mDCLevel = new JLabel();
-		mDCLevel.setBounds(574, 41, 242, 35);
+		mDCLevel.setBounds(483, 33, 191, 35);
 		panel_2.add(mDCLevel);
 		
 		JLabel label = new JLabel("Register Date :");
 		label.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		label.setBounds(27, 112, 111, 23);
+		label.setBounds(16, 103, 111, 23);
 		panel_2.add(label);
 		mDMemID = new JLabel();
-		mDMemID.setBounds(150, 106, 242, 35);
+		mDMemID.setBounds(139, 97, 191, 35);
 		panel_2.add(mDMemID);
 		
 		JPanel panel_3 = new JPanel();
 		panel_3.setLayout(null);
 		panel_3.setBorder(BorderFactory.createTitledBorder(" Contact Information "));
-		panel_3.setBounds(20, 579, 1266, 106);
+		panel_3.setBounds(20, 465, 1027, 97);
 		panelDeleteMem.add(panel_3);
 		
 		JLabel lblMobile = new JLabel("Mobile : ");
 		lblMobile.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblMobile.setBounds(27, 48, 90, 23);
+		lblMobile.setBounds(16, 43, 90, 23);
 		panel_3.add(lblMobile);
 		
 		mDmobile = new JLabel();
-		mDmobile.setBounds(150, 44, 242, 35);
+		mDmobile.setBounds(139, 39, 191, 35);
 		panel_3.add(mDmobile);
 		
 		JLabel lblNewLabel_10 = new JLabel("Search by MemID : ");
 		lblNewLabel_10.setFont(new Font("Arial Unicode MS", Font.PLAIN, 18));
-		lblNewLabel_10.setBounds(200, 85, 185, 25);
+		lblNewLabel_10.setBounds(97, 60, 185, 25);
 		panelDeleteMem.add(lblNewLabel_10);
 		
 		dMSearch = new JTextField();
-		dMSearch.setBounds(371, 85, 551, 35);
+		dMSearch.setBounds(268, 60, 551, 35);
 		panelDeleteMem.add(dMSearch);
 		dMSearch.setColumns(10);
 		
 		btnDMemSearch = new JButton("Search");
-		btnDMemSearch.setBounds(983, 85, 117, 35);
+		btnDMemSearch.setBounds(880, 60, 117, 35);
 		panelDeleteMem.add(btnDMemSearch);
 		
 		((javax.swing.border.TitledBorder) panel_1.getBorder()).
@@ -4506,7 +4506,7 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 		panel_3.repaint();
 	
 		panelButtomDeleteMem = new JPanel();
-		panelButtomDeleteMem.setBounds(700, 948, 610, 65);
+		panelButtomDeleteMem.setBounds(538, 706, 610, 65);
 		contentPane.add(panelButtomDeleteMem);
 		panelButtomDeleteMem.setLayout(null);
 		
@@ -4546,12 +4546,12 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 	{
 		panelViewGenSale = new JPanel();
 		panelViewGenSale.setBorder(new LineBorder(new Color(204, 0, 0), 3));
-		panelViewGenSale.setBounds(338, 144, 1304, 792);
+		panelViewGenSale.setBounds(280, 110, 1065, 592);
 		contentPane.add(panelViewGenSale);
 		panelViewGenSale.setLayout(null);
 		
 		JLabel lblNewLabel_2 = new JLabel("General Sale List");
-		lblNewLabel_2.setBounds(6, 8, 1322, 65);
+		lblNewLabel_2.setBounds(6, 8, 1053, 50);
 		lblNewLabel_2.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNewLabel_2.setFont(new Font("Comic Sans MS", Font.PLAIN, 21));
 		panelViewGenSale.add(lblNewLabel_2);
@@ -4565,7 +4565,7 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 		
 		JPanel panel_1 = new JPanel();
 		panel_1.setBorder(null);
-		panel_1.setBounds(39, 85, 1220, 670);
+		panel_1.setBounds(16, 70, 1030, 504);
 		panel_1.setLayout(new BorderLayout());
 		panelViewGenSale.add(panel_1);
 		
@@ -4635,7 +4635,7 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 			}
 		});
 		panelButtonGenSale = new JPanel();
-		panelButtonGenSale.setBounds(700, 948, 610, 65);
+		panelButtonGenSale.setBounds(538, 706, 610, 65);
 		contentPane.add(panelButtonGenSale);
 		panelButtonGenSale.setLayout(null);
 		
@@ -4665,12 +4665,12 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 	{
 		panelSearchGenSale = new JPanel();
 		panelSearchGenSale.setBorder(new LineBorder(new Color(204, 0, 0), 3));
-		panelSearchGenSale.setBounds(338, 144, 1304, 792);
+		panelSearchGenSale.setBounds(280, 110, 1065, 592);
 		contentPane.add(panelSearchGenSale);
 		panelSearchGenSale.setLayout(null);
 		
 		JLabel lblNewLabel_2 = new JLabel("General Sale List");
-		lblNewLabel_2.setBounds(6, 8, 1322, 65);
+		lblNewLabel_2.setBounds(6, 8, 1053, 50);
 		lblNewLabel_2.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNewLabel_2.setFont(new Font("Comic Sans MS", Font.PLAIN, 21));
 		panelSearchGenSale.add(lblNewLabel_2);
@@ -4684,7 +4684,7 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 		
 		JPanel panel_1 = new JPanel();
 		panel_1.setBorder(null);
-		panel_1.setBounds(39, 132, 1220, 623);
+		panel_1.setBounds(19, 110, 1029, 467);
 		panel_1.setLayout(new BorderLayout());
 		panelSearchGenSale.add(panel_1);
 		
@@ -4701,15 +4701,15 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 		
 		JLabel lblSearch_3 = new JLabel("Search : ");
 		lblSearch_3.setFont(new Font("Arial Unicode MS", Font.PLAIN, 18));
-		lblSearch_3.setBounds(220, 77, 88, 25);
+		lblSearch_3.setBounds(99, 68, 88, 25);
 		panelSearchGenSale.add(lblSearch_3);
 		
 		btnSGSearch = new JButton("Search");
-		btnSGSearch.setBounds(999, 72, 117, 35);
+		btnSGSearch.setBounds(878, 63, 117, 35);
 		panelSearchGenSale.add(btnSGSearch);
 		
 		sGDate = new JDateChooser();
-		sGDate.setBounds(371, 72, 551, 35);
+		sGDate.setBounds(250, 63, 551, 35);
 		panelSearchGenSale.add(sGDate);
 		
 		DefaultTableCellRenderer renderer = (DefaultTableCellRenderer)
@@ -4768,7 +4768,7 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 		});
 	    
 		panelButtonSearchGenSale = new JPanel();
-		panelButtonSearchGenSale.setBounds(700, 948, 610, 65);
+		panelButtonSearchGenSale.setBounds(538, 706, 610, 65);
 		contentPane.add(panelButtonSearchGenSale);
 		panelButtonSearchGenSale.setLayout(null);
 		
@@ -4799,18 +4799,18 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 	{
 		panelDeleteGenSale = new JPanel();
 		panelDeleteGenSale.setBorder(new LineBorder(new Color(204, 0, 0), 3));
-		panelDeleteGenSale.setBounds(338, 144, 1304, 792);
+		panelDeleteGenSale.setBounds(280, 110, 1065, 592);
 		contentPane.add(panelDeleteGenSale);
 		panelDeleteGenSale.setLayout(null);
 		
 		JLabel lblNewLabel_2 = new JLabel("General Sale List");
 		lblNewLabel_2.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_2.setBounds(6, 8, 1322, 65);
+		lblNewLabel_2.setBounds(6, 8, 1053, 50);
 		lblNewLabel_2.setFont(new Font("Comic Sans MS", Font.PLAIN, 21));
 		panelDeleteGenSale.add(lblNewLabel_2);
 		
 		JPanel panel_1 = new JPanel();
-		panel_1.setBounds(20, 151, 1266, 180);
+		panel_1.setBounds(16, 110, 1027, 180);
 		panelDeleteGenSale.add(panel_1);
 		
 		panel_1.setBorder(BorderFactory.createTitledBorder(" Movie Information "));
@@ -4818,134 +4818,134 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 		
 		JLabel lblNewLabel_9 = new JLabel("Movie Name : ");
 		lblNewLabel_9.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblNewLabel_9.setBounds(27, 48, 111, 23);
+		lblNewLabel_9.setBounds(16, 48, 111, 23);
 		panel_1.add(lblNewLabel_9);
 		
 		sgMName = new JLabel();
-		sgMName.setBounds(150, 44, 242, 35);
+		sgMName.setBounds(139, 44, 191, 35);
 		panel_1.add(sgMName);
 		
 		JLabel lblLastName = new JLabel("Running Time : ");
 		lblLastName.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblLastName.setBounds(451, 48, 122, 23);
+		lblLastName.setBounds(360, 48, 122, 23);
 		panel_1.add(lblLastName);
 		
 		sgMRun = new JLabel();
-		sgMRun.setBounds(574, 44, 242, 35);
+		sgMRun.setBounds(483, 44, 191, 35);
 		panel_1.add(sgMRun);
 		
 		JLabel lblGener = new JLabel("Time Start : ");
 		lblGener.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblGener.setBounds(876, 48, 90, 23);
+		lblGener.setBounds(705, 48, 90, 23);
 		panel_1.add(lblGener);
 		
 		sgMTime = new JLabel();
-		sgMTime.setBounds(999, 44, 242, 35);
+		sgMTime.setBounds(828, 44, 191, 35);
 		panel_1.add(sgMTime);
 		
 		JLabel lblDateOfBirth = new JLabel("Hall : ");
 		lblDateOfBirth.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblDateOfBirth.setBounds(27, 115, 111, 23);
+		lblDateOfBirth.setBounds(16, 115, 111, 23);
 		panel_1.add(lblDateOfBirth);
 		
 		sgMHall= new JLabel();
-		sgMHall.setBounds(150, 111, 242, 35);
+		sgMHall.setBounds(139, 111, 191, 35);
 		panel_1.add(sgMHall);
 		
 		JLabel lblSalary = new JLabel("Total Seat : ");
 		lblSalary.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblSalary.setBounds(451, 115, 90, 23);
+		lblSalary.setBounds(360, 115, 90, 23);
 		panel_1.add(lblSalary);
 		
 		sgMTSeat = new JLabel();
-		sgMTSeat.setBounds(574, 111, 242, 35);
+		sgMTSeat.setBounds(483, 111, 191, 35);
 		panel_1.add(sgMTSeat);
 		
 		JLabel lblTicketPrice_1 = new JLabel("Ticket Price : ");
 		lblTicketPrice_1.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblTicketPrice_1.setBounds(876, 115, 105, 23);
+		lblTicketPrice_1.setBounds(705, 115, 105, 23);
 		panel_1.add(lblTicketPrice_1);
 		
 		sgMTPrice = new JLabel();
-		sgMTPrice.setBounds(999, 111, 242, 35);
+		sgMTPrice.setBounds(828, 111, 191, 35);
 		panel_1.add(sgMTPrice);
 		
 		JPanel panel_2 = new JPanel();
 		panel_2.setLayout(null);
 		panel_2.setBorder(BorderFactory.createTitledBorder(" Sale Information "));
-		panel_2.setBounds(20, 368, 1266, 250);
+		panel_2.setBounds(16, 316, 1027, 250);
 		panelDeleteGenSale.add(panel_2);
 		
 		JLabel lblStreet = new JLabel("Sale ID : ");
 		lblStreet.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblStreet.setBounds(27, 48, 90, 23);
+		lblStreet.setBounds(16, 48, 90, 23);
 		panel_2.add(lblStreet);
 		
 		sgSaleID = new JLabel();
-		sgSaleID.setBounds(150, 44, 242, 35);
+		sgSaleID.setBounds(139, 44, 191, 35);
 		panel_2.add(sgSaleID);
 		
 		JLabel lblDistrict = new JLabel("Date : ");
 		lblDistrict.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblDistrict.setBounds(451, 48, 90, 23);
+		lblDistrict.setBounds(360, 52, 90, 23);
 		panel_2.add(lblDistrict);
 		
 		sgDate = new JLabel();
-		sgDate.setBounds(574, 44, 242, 35);
+		sgDate.setBounds(483, 48, 191, 35);
 		panel_2.add(sgDate);
 		
 		JLabel lblCommune = new JLabel("Time : ");
 		lblCommune.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblCommune.setBounds(876, 48, 90, 23);
+		lblCommune.setBounds(705, 52, 90, 23);
 		panel_2.add(lblCommune);
 		
 		sgTime = new JLabel();
-		sgTime.setBounds(999, 44, 242, 35);
+		sgTime.setBounds(828, 48, 191, 35);
 		panel_2.add(sgTime);
 		
 		JLabel lblCityProvince = new JLabel("Ticket Amount : ");
 		lblCityProvince.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblCityProvince.setBounds(27, 115, 123, 23);
+		lblCityProvince.setBounds(16, 115, 123, 23);
 		panel_2.add(lblCityProvince);
 		
 		sgTAmount = new JLabel();
-		sgTAmount.setBounds(150, 111, 242, 35);
+		sgTAmount.setBounds(139, 111, 191, 35);
 		panel_2.add(sgTAmount);
 		
 		JLabel lblCountry = new JLabel("Total Price : ");
 		lblCountry.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblCountry.setBounds(451, 115, 90, 23);
+		lblCountry.setBounds(360, 119, 90, 23);
 		panel_2.add(lblCountry);
 		
 		sgTPrice = new JLabel();
-		sgTPrice.setBounds(574, 111, 242, 35);
+		sgTPrice.setBounds(483, 115, 191, 35);
 		panel_2.add(sgTPrice);
 		
 		JLabel lblPayment = new JLabel("Payment : ");
 		lblPayment.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblPayment.setBounds(876, 115, 90, 23);
+		lblPayment.setBounds(705, 119, 90, 23);
 		panel_2.add(lblPayment);
 		
 		sgPayment = new JLabel();
-		sgPayment.setBounds(999, 111, 242, 35);
+		sgPayment.setBounds(828, 115, 191, 35);
 		panel_2.add(sgPayment);
 		
 		JLabel lblYourReturn = new JLabel("Your Return : ");
 		lblYourReturn.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblYourReturn.setBounds(27, 185, 123, 23);
+		lblYourReturn.setBounds(16, 185, 123, 23);
 		panel_2.add(lblYourReturn);
 		
 		sgYourReturn = new JLabel();
-		sgYourReturn.setBounds(150, 181, 242, 35);
+		sgYourReturn.setBounds(139, 181, 191, 35);
 		panel_2.add(sgYourReturn);
 		
 		sgEID = new JLabel();
-		sgEID.setBounds(574, 181, 242, 35);
+		sgEID.setBounds(483, 185, 191, 35);
 		panel_2.add(sgEID);
 		
 		JLabel lblEmployeeId = new JLabel("Employee ID : ");
 		lblEmployeeId.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblEmployeeId.setBounds(451, 185, 111, 23);
+		lblEmployeeId.setBounds(360, 189, 111, 23);
 		panel_2.add(lblEmployeeId);
 		
 		((javax.swing.border.TitledBorder) panel_1.getBorder()).
@@ -4959,7 +4959,7 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 		panel_2.repaint();
 	
 		panelButtonDeleteGenSale= new JPanel();
-		panelButtonDeleteGenSale.setBounds(700, 948, 610, 65);
+		panelButtonDeleteGenSale.setBounds(538, 706, 610, 65);
 		contentPane.add(panelButtonDeleteGenSale);
 		panelButtonDeleteGenSale.setLayout(null);
 		
@@ -4985,16 +4985,16 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 
 		JLabel lblSearch_2 = new JLabel("Search by SaleID : ");
 		lblSearch_2.setFont(new Font("Arial Unicode MS", Font.PLAIN, 18));
-		lblSearch_2.setBounds(200, 89, 185, 23);
+		lblSearch_2.setBounds(96, 65, 185, 23);
 		panelDeleteGenSale.add(lblSearch_2);
 		
 		sgSearch = new JTextField();
-		sgSearch.setBounds(388, 85, 551, 36);
+		sgSearch.setBounds(284, 61, 551, 36);
 		panelDeleteGenSale.add(sgSearch);
 		sgSearch.setColumns(10);
 		
 		btnDGSearch = new JButton("Search");
-		btnDGSearch.setBounds(972, 85, 117, 36);
+		btnDGSearch.setBounds(868, 61, 117, 36);
 		panelDeleteGenSale.add(btnDGSearch);
 		
 		/*JButton btnAdd = new JButton("   Add Employee");
@@ -5013,12 +5013,12 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 	{
 		panelViewMemSale = new JPanel();
 		panelViewMemSale.setBorder(new LineBorder(new Color(204, 0, 0), 3));
-		panelViewMemSale.setBounds(338, 144, 1304, 792);
+		panelViewMemSale.setBounds(280, 110, 1065, 592);
 		contentPane.add(panelViewMemSale);
 		panelViewMemSale.setLayout(null);
 		
 		JLabel lblNewLabel_2 = new JLabel("Membership Sale List");
-		lblNewLabel_2.setBounds(6, 8, 1322, 65);
+		lblNewLabel_2.setBounds(6, 8, 1053, 50);
 		lblNewLabel_2.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNewLabel_2.setFont(new Font("Comic Sans MS", Font.PLAIN, 21));
 		panelViewMemSale.add(lblNewLabel_2);
@@ -5033,7 +5033,7 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 		
 		JPanel panel_1 = new JPanel();
 		panel_1.setBorder(null);
-		panel_1.setBounds(39, 85, 1220, 670);
+		panel_1.setBounds(16, 70, 1031, 506);
 		panel_1.setLayout(new BorderLayout());
 		panelViewMemSale.add(panel_1);
 		
@@ -5104,7 +5104,7 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 			}
 		});
 		panelButtonViewMemSale = new JPanel();
-		panelButtonViewMemSale.setBounds(700, 948, 610, 65);
+		panelButtonViewMemSale.setBounds(538, 706, 610, 65);
 		contentPane.add(panelButtonViewMemSale);
 		panelButtonViewMemSale.setLayout(null);
 		
@@ -5134,12 +5134,12 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 	{
 		panelSearchMemSale = new JPanel();
 		panelSearchMemSale.setBorder(new LineBorder(new Color(204, 0, 0), 3));
-		panelSearchMemSale.setBounds(338, 144, 1304, 792);
+		panelSearchMemSale.setBounds(280, 110, 1065, 592);
 		contentPane.add(panelSearchMemSale);
 		panelSearchMemSale.setLayout(null);
 		
 		JLabel lblNewLabel_2 = new JLabel("Membership Sale List");
-		lblNewLabel_2.setBounds(6, 8, 1322, 65);
+		lblNewLabel_2.setBounds(6, 8, 1053, 50);
 		lblNewLabel_2.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNewLabel_2.setFont(new Font("Comic Sans MS", Font.PLAIN, 21));
 		panelSearchMemSale.add(lblNewLabel_2);
@@ -5154,7 +5154,7 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 		
 		JPanel panel_1 = new JPanel();
 		panel_1.setBorder(null);
-		panel_1.setBounds(39, 132, 1220, 623);
+		panel_1.setBounds(18, 116, 1028, 459);
 		panel_1.setLayout(new BorderLayout());
 		panelSearchMemSale.add(panel_1);
 		
@@ -5171,15 +5171,15 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 		
 		JLabel lblSearch_3 = new JLabel("Search : ");
 		lblSearch_3.setFont(new Font("Arial Unicode MS", Font.PLAIN, 18));
-		lblSearch_3.setBounds(220, 77, 88, 25);
+		lblSearch_3.setBounds(97, 68, 88, 25);
 		panelSearchMemSale.add(lblSearch_3);
 		
 		btnSMSSearch = new JButton("Search");
-		btnSMSSearch.setBounds(999, 72, 117, 35);
+		btnSMSSearch.setBounds(876, 63, 117, 35);
 		panelSearchMemSale.add(btnSMSSearch);
 		
 		sMDate = new JDateChooser();
-		sMDate.setBounds(371, 72, 551, 35);
+		sMDate.setBounds(248, 63, 551, 35);
 		panelSearchMemSale.add(sMDate);
 		
 		DefaultTableCellRenderer renderer = (DefaultTableCellRenderer)
@@ -5238,7 +5238,7 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 			}
 		});
 		panelButtonSearchMemSale= new JPanel();
-		panelButtonSearchMemSale.setBounds(700, 948, 610, 65);
+		panelButtonSearchMemSale.setBounds(538, 706, 610, 65);
 		contentPane.add(panelButtonSearchMemSale);
 		panelButtonSearchMemSale.setLayout(null);
 		
@@ -5269,18 +5269,18 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 	{
 		panelDeleteMemSale = new JPanel();
 		panelDeleteMemSale.setBorder(new LineBorder(new Color(204, 0, 0), 3));
-		panelDeleteMemSale.setBounds(338, 144, 1304, 792);
+		panelDeleteMemSale.setBounds(280, 110, 1065, 592);
 		contentPane.add(panelDeleteMemSale);
 		panelDeleteMemSale.setLayout(null);
 		
-		JLabel lblNewLabel_2 = new JLabel("Employee Information");
+		JLabel lblNewLabel_2 = new JLabel("Sale Information");
 		lblNewLabel_2.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_2.setBounds(6, 8, 1322, 65);
+		lblNewLabel_2.setBounds(6, 8, 1053, 50);
 		lblNewLabel_2.setFont(new Font("Comic Sans MS", Font.PLAIN, 21));
 		panelDeleteMemSale.add(lblNewLabel_2);
 		
 		JPanel panel_1 = new JPanel();
-		panel_1.setBounds(20, 151, 1266, 180);
+		panel_1.setBounds(16, 110, 1027, 180);
 		panelDeleteMemSale.add(panel_1);
 		
 		panel_1.setBorder(BorderFactory.createTitledBorder(" Movie Information "));
@@ -5288,142 +5288,142 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 		
 		JLabel lblNewLabel_9 = new JLabel("Movie Name : ");
 		lblNewLabel_9.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblNewLabel_9.setBounds(27, 48, 111, 23);
+		lblNewLabel_9.setBounds(16, 48, 111, 23);
 		panel_1.add(lblNewLabel_9);
 		
 		smMName = new JLabel();
-		smMName.setBounds(150, 44, 242, 35);
+		smMName.setBounds(139, 44, 190, 35);
 		panel_1.add(smMName);
 		
 		JLabel lblLastName = new JLabel("Running Time : ");
 		lblLastName.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblLastName.setBounds(451, 48, 122, 23);
+		lblLastName.setBounds(360, 48, 122, 23);
 		panel_1.add(lblLastName);
 		
 		smMRun = new JLabel();
-		smMRun.setBounds(574, 44, 242, 35);
+		smMRun.setBounds(483, 44, 191, 35);
 		panel_1.add(smMRun);
 		
 		JLabel lblGener = new JLabel("Time Start : ");
 		lblGener.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblGener.setBounds(876, 48, 90, 23);
+		lblGener.setBounds(705, 48, 90, 23);
 		panel_1.add(lblGener);
 		
 		smMTime = new JLabel();
-		smMTime.setBounds(999, 44, 242, 35);
+		smMTime.setBounds(828, 44, 191, 35);
 		panel_1.add(smMTime);
 		
 		JLabel lblDateOfBirth = new JLabel("Hall : ");
 		lblDateOfBirth.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblDateOfBirth.setBounds(27, 115, 111, 23);
+		lblDateOfBirth.setBounds(16, 115, 111, 23);
 		panel_1.add(lblDateOfBirth);
 		
 		smMHall = new JLabel();
-		smMHall.setBounds(150, 111, 242, 35);
+		smMHall.setBounds(139, 111, 190, 35);
 		panel_1.add(smMHall);
 		
 		JLabel lblSalary = new JLabel("Total Seat : ");
 		lblSalary.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblSalary.setBounds(451, 115, 90, 23);
+		lblSalary.setBounds(360, 115, 90, 23);
 		panel_1.add(lblSalary);
 		
 		smMTSeat = new JLabel();
-		smMTSeat.setBounds(574, 111, 242, 35);
+		smMTSeat.setBounds(483, 111, 191, 35);
 		panel_1.add(smMTSeat);
 		
 		JLabel lblTicketPrice_1 = new JLabel("Ticket Price : ");
 		lblTicketPrice_1.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblTicketPrice_1.setBounds(876, 115, 105, 23);
+		lblTicketPrice_1.setBounds(705, 115, 105, 23);
 		panel_1.add(lblTicketPrice_1);
 		
 		smMTPrice = new JLabel();
-		smMTPrice.setBounds(999, 111, 242, 35);
+		smMTPrice.setBounds(828, 111, 191, 35);
 		panel_1.add(smMTPrice);
 		
 		JPanel panel_2 = new JPanel();
 		panel_2.setLayout(null);
 		panel_2.setBorder(BorderFactory.createTitledBorder(" Sale Information "));
-		panel_2.setBounds(20, 368, 1266, 250);
+		panel_2.setBounds(16, 316, 1027, 250);
 		panelDeleteMemSale.add(panel_2);
 		
 		JLabel lblStreet = new JLabel("Sale ID : ");
 		lblStreet.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblStreet.setBounds(27, 48, 123, 23);
+		lblStreet.setBounds(16, 48, 123, 23);
 		panel_2.add(lblStreet);
 		
 		smSaleID = new JLabel();
-		smSaleID.setBounds(150, 44, 242, 35);
+		smSaleID.setBounds(139, 44, 190, 35);
 		panel_2.add(smSaleID);
 		JLabel lblDistrict = new JLabel("Membership ID : ");
 		lblDistrict.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblDistrict.setBounds(451, 48, 123, 23);
+		lblDistrict.setBounds(360, 48, 123, 23);
 		panel_2.add(lblDistrict);
 		
 		smMemID = new JLabel();
-		smMemID.setBounds(574, 44, 242, 35);
+		smMemID.setBounds(483, 44, 191, 35);
 		panel_2.add(smMemID);
 		
 		JLabel lblCommune = new JLabel("Employee ID : ");
 		lblCommune.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblCommune.setBounds(876, 48, 123, 23);
+		lblCommune.setBounds(705, 48, 123, 23);
 		panel_2.add(lblCommune);
 		
 		smEID = new JLabel();
-		smEID.setBounds(999, 44, 242, 35);
+		smEID.setBounds(828, 44, 191, 35);
 		panel_2.add(smEID);
 		
 		JLabel lblCityProvince = new JLabel("Date : ");
 		lblCityProvince.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblCityProvince.setBounds(27, 115, 123, 23);
+		lblCityProvince.setBounds(16, 115, 123, 23);
 		panel_2.add(lblCityProvince);
 		
 		smDate = new JLabel();
-		smDate.setBounds(150, 111, 242, 35);
+		smDate.setBounds(139, 111, 190, 35);
 		panel_2.add(smDate);
 		
 		JLabel lblCountry = new JLabel("Time : ");
 		lblCountry.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblCountry.setBounds(451, 115, 90, 23);
+		lblCountry.setBounds(360, 115, 90, 23);
 		panel_2.add(lblCountry);
 		
 		smTime = new JLabel();
-		smTime.setBounds(574, 111, 242, 35);
+		smTime.setBounds(483, 111, 191, 35);
 		panel_2.add(smTime);
 		
 		JLabel lblPayment = new JLabel("Ticket Amount : ");
 		lblPayment.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblPayment.setBounds(876, 115, 123, 23);
+		lblPayment.setBounds(705, 115, 123, 23);
 		panel_2.add(lblPayment);
 		
 		smTAmount = new JLabel();
-		smTAmount.setBounds(999, 111, 242, 35);
+		smTAmount.setBounds(828, 111, 191, 35);
 		panel_2.add(smTAmount);
 		
 		JLabel lblYourReturn = new JLabel("Total Price : ");
 		lblYourReturn.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblYourReturn.setBounds(27, 185, 123, 23);
+		lblYourReturn.setBounds(16, 185, 123, 23);
 		panel_2.add(lblYourReturn);
 		
 		smTPrice = new JLabel();
-		smTPrice.setBounds(150, 181, 242, 35);
+		smTPrice.setBounds(139, 181, 190, 35);
 		panel_2.add(smTPrice);
 		
 		smPayment = new JLabel();
-		smPayment.setBounds(574, 181, 242, 35);
+		smPayment.setBounds(483, 181, 191, 35);
 		panel_2.add(smPayment);
 		
 		JLabel lblEmployee = new JLabel("Payment : ");
 		lblEmployee.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblEmployee.setBounds(451, 185, 123, 23);
+		lblEmployee.setBounds(360, 185, 123, 23);
 		panel_2.add(lblEmployee);
 		
 		JLabel lblYourReturn_1 = new JLabel("Your Return : ");
 		lblYourReturn_1.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
-		lblYourReturn_1.setBounds(876, 185, 123, 23);
+		lblYourReturn_1.setBounds(705, 185, 123, 23);
 		panel_2.add(lblYourReturn_1);
 		
 		smYourReturn = new JLabel();
-		smYourReturn.setBounds(999, 181, 242, 35);
+		smYourReturn.setBounds(828, 181, 193, 35);
 		panel_2.add(smYourReturn);
 		
 		((javax.swing.border.TitledBorder) panel_1.getBorder()).
@@ -5437,7 +5437,7 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 		panel_2.repaint();
 	
 		panelButtonDeleteMemSale= new JPanel();
-		panelButtonDeleteMemSale.setBounds(700, 948, 610, 65);
+		panelButtonDeleteMemSale.setBounds(538, 706, 610, 65);
 		contentPane.add(panelButtonDeleteMemSale);
 		panelButtonDeleteMemSale.setLayout(null);
 		
@@ -5463,16 +5463,16 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 
 		JLabel lblSearch_2 = new JLabel("Search by SaleID : ");
 		lblSearch_2.setFont(new Font("Arial Unicode MS", Font.PLAIN, 18));
-		lblSearch_2.setBounds(200, 89, 185, 23);
+		lblSearch_2.setBounds(97, 64, 185, 23);
 		panelDeleteMemSale.add(lblSearch_2);
 		
 		smSearch = new JTextField();
-		smSearch.setBounds(388, 85, 551, 36);
+		smSearch.setBounds(285, 60, 551, 36);
 		panelDeleteMemSale.add(smSearch);
 		smSearch.setColumns(10);
 		
 		btnDMSSearch = new JButton("Search");
-		btnDMSSearch.setBounds(972, 85, 117, 36);
+		btnDMSSearch.setBounds(869, 60, 117, 36);
 		panelDeleteMemSale.add(btnDMSSearch);
 		
 		/*JButton btnAdd = new JButton("   Add Employee");
@@ -5542,7 +5542,7 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 				mVIcon = new JLabel();
 				panel_8.add(mVIcon, BorderLayout.CENTER);
 				mVIcon.setIcon(new ImageIcon(m.getImage()));
-				mVIcon.setPreferredSize(new Dimension(300,400));
+				mVIcon.setPreferredSize(new Dimension(250,350));
 				
 				JLabel movieTitle = new JLabel(m.getName());
 				movieTitle.setHorizontalAlignment(SwingConstants.CENTER);
@@ -5738,7 +5738,7 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 		lblmovieName.setText(":"); lblsubtitle.setText(":"); lblformats.setText(":"); lblrunningtime.setText(":"); lblgenre.setText(":"); lblopendate.setText(":"); lblcast.setText(":"); lbldirector.setText(":"); lblprice.setText(":"); lbldate.setText(":"); lblfrom.setText(":"); lbllanguage.setText(":"); lblMovieID.setText(":");
 		mUName.setText(""); mULanguage.setText(""); mUSubtitle.setText(""); mURun.setText(""); mUUGenre.setText(""); mUCast.setText(""); mUDirector.setText(""); mUFrom.setText(""); mUPirce.setText("");
 		//mUImg.setText(""); 
-		mUMovieID.setText(":");
+		mUMovieID.setText("");
 		lblDmovieName.setText(":"); lblDsubtitle.setText(":"); lblDformats.setText(":"); lblDrunningtime.setText(":"); lblDgenre.setText(":"); lblDopendate.setText(":"); lblDcast.setText(":"); lblDdirector.setText(":"); lblDprice.setText(":"); lblDdate.setText(":"); lblDfrom.setText(":"); lblDlanguage.setText(":"); lblDMovieID.setText(":");
 		mSSummary.setText(""); mUSummary.setText(""); mDSummary.setText("");
 	}	
@@ -5830,13 +5830,13 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 			
 				sVIcon = new JLabel();
 				sVIcon.setIcon(new ImageIcon(m.getImage()));
-				sVIcon.setPreferredSize(new Dimension(300,400));
+				sVIcon.setPreferredSize(new Dimension(250, 350));
 				
 				sch.add(sVIcon, "West");
 			
 				
 				JPanel sch1 = new JPanel();
-				sch1.setPreferredSize(new Dimension(380,400));
+				sch1.setPreferredSize(new Dimension(380, 350));
 				
 				sch.add(sch1, "Center");
 				sch1.setLayout(null);
@@ -5906,7 +5906,9 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 				vASeat.setBounds(141, 295, 230, 16);
 				sch1.add(vASeat);
 				
-				JLabel lblTicketPrice = new JLabel("Ticket Price");
+				vTPrice = new JLabel();
+				/////////////////////////
+				/*JLabel lblTicketPrice = new JLabel("Ticket Price");
 				lblTicketPrice.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
 				lblTicketPrice.setBounds(18, 349, 97, 16);
 				sch1.add(lblTicketPrice);
@@ -5914,7 +5916,8 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 				vTPrice = new JLabel(": " + s.getTicketprice());
 				vTPrice.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
 				vTPrice.setBounds(141, 349, 230, 16);
-				sch1.add(vTPrice);
+				sch1.add(vTPrice);*/
+				/////////////////////////
 				
 				JLabel lblRunningTime_1 = new JLabel("Running Time");
 				lblRunningTime_1.setFont(new Font("Arial Unicode MS", Font.PLAIN, 16));
@@ -6755,7 +6758,7 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 			panel.setVisible(false);
 			back.setVisible(true);
 			menu.setVisible(false);
-			UISubmenu("     Add New Movie", "     View Movie List", "     Search Movie", "     Update Movie", "     Delete Movie", "images/clapperboard.png",1);
+			UISubmenu("   Add New Movie", "   View Movie List", "   Search Movie", "   Update Movie", "   Delete Movie", "images/clapperboard.png",1);
 			submenu.setVisible(true);
 			logout.setVisible(false);
 			exit.setVisible(false);
@@ -6766,7 +6769,7 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 			panel.setVisible(false);
 			back.setVisible(true);
 			menu.setVisible(false);
-			UISubmenu("     Add Movie Schedule", "     View Movie Schedule", "     Search Movie Schedule", "     Update Movie Schedule", "     Delete Movie Schedule", "images/calendar (2).png",1);
+			UISubmenu("   Add Movie Schedule", "   View Movie Schedule", "   Search Movie Schedule", "   Update Movie Schedule", "   Delete Movie Schedule", "images/calendar (2).png",1);
 			submenu.setVisible(true);
 			logout.setVisible(false);
 			exit.setVisible(false);
@@ -6791,7 +6794,7 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 			panel.setVisible(false);
 			back.setVisible(true);
 			menu.setVisible(false);
-			UISubmenu("     Add New Employee", "     View Employee List", "     Search Employee", "     Update Employee", "     Delete Employee", "images/group (2).png",1);
+			UISubmenu("   Add New Employee", "   View Employee List", "   Search Employee", "   Update Employee", "   Delete Employee", "images/group (2).png",1);
 			submenu.setVisible(true);
 			logout.setVisible(false);
 			exit.setVisible(false);
@@ -6802,7 +6805,7 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 			panel.setVisible(false);
 			back.setVisible(true);
 			menu.setVisible(false);
-			UISubmenu("     Add New Membership", "     View Membership List", "     Search Membership", "     Update Membership", "     Delete Membership", "images/restaurant-membership-card-tool (2).png",1);
+			UISubmenu("   Add New Membership", "   View Membership List", "   Search Membership", "   Update Membership", "   Delete Membership", "images/restaurant-membership-card-tool (2).png",1);
 			submenu.setVisible(true);
 			logout.setVisible(false);
 			exit.setVisible(false);
@@ -6813,7 +6816,7 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 			panel.setVisible(false);
 			back.setVisible(true);
 			menu.setVisible(false);
-			UISubmenu("     ", "     View General Sale", "     Search General Sale", "     Update General Sale", "     Delete General Sale", "images/badge (2).png",0);
+			UISubmenu("     ", "   View General Sale", "   Search General Sale", "   Update General Sale", "   Delete General Sale", "images/badge (2).png",0);
 			submenu.setVisible(true);
 			logout.setVisible(false);
 			exit.setVisible(false);
@@ -6824,12 +6827,12 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 			panel.setVisible(false);
 			back.setVisible(true);
 			menu.setVisible(false);
-			UISubmenu("     ", "     View Membership Sale", "     Search Membership Sale", "     Update Membership Sale", "     Delete Membership Sale", "images/percentage-red.png",0);
+			UISubmenu("     ", "   View Membership Sale", "   Search Membership Sale", "   Update Membership Sale", "   Delete Membership Sale", "images/percentage-red.png",0);
 			submenu.setVisible(true);
 			logout.setVisible(false);
 			exit.setVisible(false);
 		}
-		else if(name.equals("     Add New Movie"))
+		else if(name.equals("   Add New Movie"))
 		{
 			//JOptionPane.showMessageDialog(null, "add");
 			ClearMovieControl();
@@ -6851,7 +6854,7 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 			panelButtonDelete.setVisible(false);
 			
 		}
-		else if(name.equals("     View Movie List"))
+		else if(name.equals("   View Movie List"))
 		{
 			//JOptionPane.showMessageDialog(null, "show");
 			ClearMovieControl();
@@ -6875,7 +6878,7 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 			ViewMovie();
 			
 		}
-		else if(name.equals("     Search Movie"))
+		else if(name.equals("   Search Movie"))
 		{
 			//JOptionPane.showMessageDialog(null, "search");
 			ClearMovieControl();
@@ -6896,7 +6899,7 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 			panelDelete.setVisible(false);
 			panelButtonDelete.setVisible(false);
 		}
-		else if(name.equals("     Update Movie"))
+		else if(name.equals("   Update Movie"))
 		{
 			ClearMovieControl();
 			
@@ -6917,7 +6920,7 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 			panelDelete.setVisible(false);
 			panelButtonDelete.setVisible(false);
 		}
-		else if(name.equals("     Delete Movie"))
+		else if(name.equals("   Delete Movie"))
 		{
 			ClearMovieControl();
 			
@@ -6938,7 +6941,7 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 			panelDelete.setVisible(true);
 			panelButtonDelete.setVisible(true);
 		}
-		else if(name.equals("     Add Movie Schedule"))
+		else if(name.equals("   Add Movie Schedule"))
 		{
 			ClearScheduleControls();
 			
@@ -6960,7 +6963,7 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 			panelButtonDeleteSch.setVisible(false);
 		
 		}
-		else if(name.equals("     View Movie Schedule"))
+		else if(name.equals("   View Movie Schedule"))
 		{
 			ClearScheduleControls();
 			
@@ -6983,7 +6986,7 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 			
 			ViewSchedule();
 		}
-		else if(name.equals("     Search Movie Schedule"))
+		else if(name.equals("   Search Movie Schedule"))
 		{
 			ClearScheduleControls();
 			
@@ -7004,7 +7007,7 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 			panelDeleteSch.setVisible(false);
 			panelButtonDeleteSch.setVisible(false);
 		}
-		else if(name.equals("     Update Movie Schedule"))
+		else if(name.equals("   Update Movie Schedule"))
 		{
 			ClearScheduleControls();
 			
@@ -7025,7 +7028,7 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 			panelDeleteSch.setVisible(false);
 			panelButtonDeleteSch.setVisible(false);
 		}
-		else if(name.equals("     Delete Movie Schedule"))
+		else if(name.equals("   Delete Movie Schedule"))
 		{
 			ClearScheduleControls();
 			
@@ -7046,7 +7049,7 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 			panelDeleteSch.setVisible(true);
 			panelButtonDeleteSch.setVisible(true);
 		}
-		else if(name.equals("     Add New Employee"))
+		else if(name.equals("   Add New Employee"))
 		{
 			ClearEmployeeControls();
 			
@@ -7068,7 +7071,7 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 			panelDeleteEmp.setVisible(false);
 			panelButtonDeleteEmp.setVisible(false);
 		}
-		else if(name.equals("     View Employee List"))
+		else if(name.equals("   View Employee List"))
 		{
 			ClearEmployeeControls();
 			
@@ -7092,7 +7095,7 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 			
 			ViewEmployee();
 		}
-		else if(name.equals("     Search Employee"))
+		else if(name.equals("   Search Employee"))
 		{
 			ClearEmployeeControls();
 			
@@ -7114,7 +7117,7 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 			panelDeleteEmp.setVisible(false);
 			panelButtonDeleteEmp.setVisible(false);
 		}
-		else if(name.equals("     Update Employee"))
+		else if(name.equals("   Update Employee"))
 		{
 			ClearEmployeeControls();
 			
@@ -7136,7 +7139,7 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 			panelDeleteEmp.setVisible(false);
 			panelButtonDeleteEmp.setVisible(false);
 		}
-		else if(name.equals("     Delete Employee"))
+		else if(name.equals("   Delete Employee"))
 		{
 			ClearEmployeeControls();
 			
@@ -7158,7 +7161,7 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 			panelDeleteEmp.setVisible(true);
 			panelButtonDeleteEmp.setVisible(true);
 		}
-		else if(name.equals("     Add New Membership"))
+		else if(name.equals("   Add New Membership"))
 		{
 			ClearMembershipControls();
 			
@@ -7180,7 +7183,7 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 			panelDeleteMem.setVisible(false);
 			panelButtomDeleteMem.setVisible(false);
 		}
-		else if(name.equals("     View Membership List"))
+		else if(name.equals("   View Membership List"))
 		{
 			ClearMembershipControls();
 			
@@ -7204,7 +7207,7 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 			
 			ViewMembership();
 		}
-		else if(name.equals("     Search Membership"))
+		else if(name.equals("   Search Membership"))
 		{
 			ClearMembershipControls();
 			
@@ -7226,7 +7229,7 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 			panelDeleteMem.setVisible(false);
 			panelButtomDeleteMem.setVisible(false);
 		}
-		else if(name.equals("     Update Membership"))
+		else if(name.equals("   Update Membership"))
 		{
 			ClearMembershipControls();
 			
@@ -7248,7 +7251,7 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 			panelDeleteMem.setVisible(false);
 			panelButtomDeleteMem.setVisible(false);
 		}
-		else if(name.equals("     Delete Membership"))
+		else if(name.equals("   Delete Membership"))
 		{
 			ClearMembershipControls();
 			
@@ -7270,7 +7273,7 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 			panelDeleteMem.setVisible(true);
 			panelButtomDeleteMem.setVisible(true);
 		}
-		else if(name.equals("     View General Sale"))
+		else if(name.equals("   View General Sale"))
 		{
 			ClearGensaleControls();
 			
@@ -7288,7 +7291,7 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 			
 			ViewGeneralSale();
 		}
-		else if(name.equals("     Search General Sale"))
+		else if(name.equals("   Search General Sale"))
 		{
 			ClearGensaleControls();
 			
@@ -7304,7 +7307,7 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 			panelDeleteGenSale.setVisible(false);
 			panelButtonDeleteGenSale.setVisible(false);
 		}
-		else if(name.equals("     Delete General Sale"))
+		else if(name.equals("   Delete General Sale"))
 		{
 			ClearGensaleControls();
 			
@@ -7320,7 +7323,7 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 			panelDeleteGenSale.setVisible(true);
 			panelButtonDeleteGenSale.setVisible(true);
 		}
-		else if(name.equals("     View Membership Sale"))
+		else if(name.equals("   View Membership Sale"))
 		{		
 			ClearMemControls();
 			
@@ -7338,7 +7341,7 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 			
 			ViewMembershipSale();
 		}
-		else if(name.equals("     Search Membership Sale"))
+		else if(name.equals("   Search Membership Sale"))
 		{
 			ClearMemControls();
 			
@@ -7354,7 +7357,7 @@ public class managerFunction extends JFrame implements MouseListener, ActionList
 			panelDeleteMemSale.setVisible(false);
 			panelButtonDeleteMemSale.setVisible(false);
 		}
-		else if(name.equals("     Delete Membership Sale"))
+		else if(name.equals("   Delete Membership Sale"))
 		{
 			ClearMemControls();
 			

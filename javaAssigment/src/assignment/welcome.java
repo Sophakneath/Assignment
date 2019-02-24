@@ -67,7 +67,7 @@ public class welcome extends JFrame implements MouseListener {
 		contentPane.setLayout(null);
 		
 		JPanel panel_1 = new JPanel();
-		panel_1.setBounds(0, 52, 1680, 491);
+		panel_1.setBounds(0, 52, 1680, 379);
 		contentPane.add(panel_1);
 		panel_1.setLayout(null);
 		
@@ -115,12 +115,12 @@ public class welcome extends JFrame implements MouseListener {
 		
 		JLabel label_1 = new JLabel("");
 		label_1.setIcon(new ImageIcon("images/cinema.gif"));
-		label_1.setBounds(0, 0, 800, 491);
+		label_1.setBounds(0, 0, 676, 379);
 		panel_1.add(label_1);
 		
 		JLabel label = new JLabel("");
 		label.setIcon(new ImageIcon("images/c1.jpg"));
-		label.setBounds(800, 0, 880, 491);
+		label.setBounds(676, 0, 690, 379);
 		panel_1.add(label);
 		
 		JLabel label_3 = new JLabel("");
@@ -151,15 +151,17 @@ public class welcome extends JFrame implements MouseListener {
 		menu.addMouseListener(this);
 		
 		JLabel lblPhnomPenhCinema = new JLabel("Phnom Penh Cinema");
+		lblPhnomPenhCinema.setHorizontalAlignment(SwingConstants.CENTER);
 		lblPhnomPenhCinema.setForeground(Color.WHITE);
 		lblPhnomPenhCinema.setFont(new Font("Comic Sans MS", Font.BOLD, 28));
-		lblPhnomPenhCinema.setBounds(703, 6, 270, 36);
+		lblPhnomPenhCinema.setBounds(0, 6, 1365, 36);
 		panel.add(lblPhnomPenhCinema);
 		
 		JLabel lblNowShowing = new JLabel("Now Showing");
+		lblNowShowing.setBackground(Color.WHITE);
 		lblNowShowing.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNowShowing.setFont(new Font("Arial Unicode MS", Font.PLAIN, 19));
-		lblNowShowing.setBounds(0, 551, 1680, 27);
+		lblNowShowing.setBounds(0, 432, 1366, 37);
 		contentPane.add(lblNowShowing);
 		
 		
@@ -170,7 +172,7 @@ public class welcome extends JFrame implements MouseListener {
 		panel_6.setBounds(0, 596, 1680, 454);
 		
 		JScrollPane scrollPane = new JScrollPane();
-		scrollPane.setBounds(0, 586, 1680, 404);
+		scrollPane.setBounds(0, 471, 1366, 291);
 		contentPane.add(scrollPane);
 		scrollPane.setViewportView(panel_6);
 		
@@ -200,7 +202,7 @@ public class welcome extends JFrame implements MouseListener {
 				JPanel m = new JPanel(new BorderLayout());
 				JLabel pic = new JLabel();
 				pic.setIcon(new ImageIcon(mp.getImage()));
-				pic.setPreferredSize(new Dimension(300,400));
+				pic.setPreferredSize(new Dimension(250,350));
 				
 				JLabel title = new JLabel(mp.getName());
 				title.setOpaque(true);
@@ -252,7 +254,7 @@ public class welcome extends JFrame implements MouseListener {
 		
 		setUndecorated(true);
 		Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
-		setSize(screenSize.width, screenSize.height - 10);
+		setSize(1366,768);
 		//setExtendedState(MAXIMIZED_BOTH);
 	}
 

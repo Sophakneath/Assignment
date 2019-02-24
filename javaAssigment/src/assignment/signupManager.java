@@ -51,12 +51,14 @@ public class signupManager extends JFrame implements ActionListener{
 		setLocationRelativeTo(null);
 		
 		JLabel label_1 = new JLabel("WELCOME TO");
-		label_1.setFont(new Font("AAAAAAAAAAAAAAAAAAAAAAAA", Font.BOLD, 36));
+		label_1.setHorizontalAlignment(SwingConstants.CENTER);
+		label_1.setFont(new Font("AAAAAAAAAAAAAAAAAAAAAAAA", Font.BOLD, 33));
 		label_1.setBounds(385, 111, 226, 47);
 		contentPane.add(label_1);
 		
 		JLabel label_5 = new JLabel("Phnom Penh Cinema");
-		label_5.setFont(new Font("AKbalthom KhmerLight", Font.BOLD, 19));
+		label_5.setHorizontalAlignment(SwingConstants.CENTER);
+		label_5.setFont(new Font("AKbalthom KhmerLight", Font.BOLD, 17));
 		label_5.setBounds(410, 159, 175, 16);
 		contentPane.add(label_5);
 		
